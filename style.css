@@ -31,3 +31,48 @@ nav img {
   border-radius: 50%;
   margin-left: 800px
 }
+.welcome h1 {
+  color: brown;
+  font-weight: 700;
+  margin-left: 50px;
+  margin-top: 75px;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 85px;
+}
+#explore {
+  background-color: #D29C75;
+  border: none;
+  padding: 10px 15px;
+  width: 180px;
+  height: 75px;
+  border-radius: 25px;
+  font-size: 30px;
+  font-weight: 700;
+  opacity: 60%;
+}
+a {
+  color: white;
+  font-family: poppins;
+  text-decoration: none;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+
+.coffee {
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  margin-right: 140px;
+  margin-top: 80px;
+}
+.coffee h2 {
+  color: brown;
+}
+.coffee img {
+  width: 120px;
+}
