@@ -9,7 +9,6 @@ body {
   padding: 0;
   background-color: #F3C796;
   background-size: cover;
-  background-position: center;
   background-image: url("1609.m00.i125.n001.S.c12 1.jpg");
   background-blend-mode: multiply;
 }
@@ -76,7 +75,7 @@ a {
   font-family: poppins;
   text-decoration: none;
 }
-#explore:hover {
+.button:hover {
   transform: scale(1.1);
 }
 
@@ -94,14 +93,16 @@ a {
 .coffee img {
   width: 150px;
 }
+
 .container2 {
-  display: flex;
-  height: auto;
+  height: 250px;
+  align-items: center;
+  display: block;
+  
 }
-.container2 img {
-  display: flex;
-  margin-left: 10rem;
-}
+
+
+
 .container2 h2 {
   color: white;
   font-size: 50px;
@@ -122,8 +123,18 @@ a {
   font-style: italic;
   text-decoration: underline;
 }
+
+.container2 img {
+  height: 15rem; 
+  margin-left: 25rem;
+  display: flex;
+  margin-bottom: 15rem;
+  width: 25rem;
+}
+
 .container3 {
-  height: 12rem;
+  height: 18rem;
+  margin-top: 18rem;
   background-color: #D29C75;
   background-size: cover;
   background-image: url("1609.m00.i125.n001.S.c12 1.jpg");
@@ -133,9 +144,7 @@ a {
 .container3 h2 {
   color: white;
   font-size: 50px;
-  margin-top: 90px;
-  margin-left: 50px;
-  margin-top: 40px;
+  margin-left: 45px;
 }
 
 .container3 h3 {
@@ -146,19 +155,20 @@ a {
   font-weight: 300;
 }
 
-.container3 .line1 {
+.container3 .line1 .line2 {
+  display: flex;
+  align-items: flex-start;
   margin-top: -100px;
+  margin-left: 0;
 }
 
-.container3 .line2 {
-  margin-left: 380px;
-}
+
 
 .benefit-list {
   text-align: justify;
   color: white;
   margin-top: 30px;
-  margin-left: 323px;
+  margin-left: 0;
 }
 .container4 {
   justify-content: center;
@@ -177,6 +187,7 @@ a {
 ion-icon {
   font-size: 30px; /* Adjust icon size as needed */
 }
+
 .footer {
   display: flex;
   justify-content: center;
@@ -192,6 +203,10 @@ ion-icon {
     margin-left: 3.6px;
     margin-right: 20px;
   }
+  .container h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
   .welcome h1 {
     margin-left: 15px;
   }
@@ -199,7 +214,8 @@ ion-icon {
     margin-left: 15px;
   }
   .coffee img {
-    width: 120px;
+    width: 170px;
+    height: 200px;
   }
   .container2 {
      display: flex;
@@ -213,11 +229,16 @@ ion-icon {
   .container3 {
     display: flex;
     flex-direction: column;
-    height: 50rem;
-    margin-top: 5rem
+    align-items: flex-start;
+    margin-bottom: 10px;
+    height: 25rem;
+    margin-top: 15rem
   }
   .container h2 {
-    font-size: 25px;
+    margin-top: 5px;
   }
+  .container3 h3 {
+    margin-left: 38px;
+  }
+  
 }
-
