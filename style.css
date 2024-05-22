@@ -203,7 +203,7 @@ ion-icon {
 }
 @media screen and (max-width: 480px) {
   body {
-    overflow-x: ;
+    overflow-x: hidden;
   }
   nav a {
     font-size: 14.5px;
@@ -257,4 +257,17 @@ ion-icon {
     margin-top: 32px;
     margin-left: 15px;
   }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    overflow: hidden;
+  }
+
+  .container2 img {
+    display: flex;
+  justify-content: right;
+  flex-direction: row;
+  }
+
 }
