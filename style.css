@@ -13,6 +13,16 @@ body {
   background-blend-mode: multiply;
 }
 
+#welcome::before,
+#dataset::before,
+#benefit::before {
+  content: '';
+  display: block;
+  height: 60px; /* Sesuaikan dengan tinggi navbar Anda */
+  margin-top: -60px; /* Sesuaikan dengan tinggi navbar Anda */
+  visibility: hidden;
+}
+
 .container {
   height: 650px;
 
@@ -57,17 +67,17 @@ nav img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 85px;
+  margin-top: 120px;
 }
 #explore {
   background-color: #D29C75;
   border: none;
   padding: 10px 15px;
-  width: 180px;
-  height: 75px;
+  width: 340px;
+  height: 100px;
   border-radius: 25px;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 800;
   opacity: 60%;
 }
 a {
@@ -95,6 +105,7 @@ a {
 }
 
 .container2 {
+  margin-top: -130px;
   height: 250px;
   align-items: center;
   display: block;
@@ -155,7 +166,7 @@ a {
   font-weight: 300;
 }
 
-.container3 .line1 .line2 {
+.line1 {
   display: flex;
   align-items: flex-start;
   margin-top: -100px;
@@ -167,8 +178,8 @@ a {
 .benefit-list {
   text-align: justify;
   color: white;
-  margin-top: 30px;
-  margin-left: 0;
+  margin-top: 20px;
+  margin-left: 350px;
 }
 .container4 {
   justify-content: center;
@@ -199,7 +210,7 @@ ion-icon {
     overflow-x: hidden;
   }
   nav a {
-    font-size: 14.7px;
+    font-size: 14.5px;
     margin-left: 3.6px;
     margin-right: 20px;
   }
@@ -218,6 +229,7 @@ ion-icon {
     height: 200px;
   }
   .container2 {
+    margin-top: 120px;
      display: flex;
      flex-direction: column;
   }
@@ -239,6 +251,7 @@ ion-icon {
   }
   .container3 h3 {
     margin-left: 38px;
+    margin-top: 10px;
   }
   
 }
