@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="Logo Revou.png" alt="Logo Revou">
+        </div>
+        <div class="nav-item">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span>Dashboard</span>
+        </div>
+        <div class="nav-item">
+            <i class="fa fa-line-chart" aria-hidden="true"></i>
+            <span>Sales</span>
+        </div>
+        <div class="nav-item">
+            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+            <span>Analytics</span>
+        </div>
+        <div class="nav-item">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <span>Setting</span>
+        </div>
+        <div class="nav-item">
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+            <span>Signout</span>
+        </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="content">
+        <div class="header">
+            <h1> Dashboard </h1>   
+            <div class="user-icon">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </div>
+        </div>
+        
+        <!-- ScoreCard -->
+        <div class="cards">
+            <div class="card">
+                <div class="card-content">
+                    <h2>$698.812</h2>
+                    <span> Total Revenue <br> Per Location </span>
+                </div>
+                <div class="card-icon">
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h2>$698.7</h2>
+                    <span> Total Monthly <br> Revenue </span>
+                </div>
+                <div class="card-icon">
+                    <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                </div>
+            </div>
+            
+                <div class="card">
+                    <div class="card-content">
+                        <h2>$698.812</h2>
+                        <span> Top Five Best <br> Selling Product </span>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa fa-tag" aria-hidden="true"></i>
+                    </div>
+                </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h2> $23.185 </h2>
+                            <span> Top Transaction <br> Products </span>
+                        </div>
+                        <div class="card-icon">
+                            <i class="fa fa-usd" aria-hidden="true"></i>
+                        </div>
+                    </div>
+        </div>
+    
+
+<!-- Chart Line Monhtly Revenue -->
+
+<div style='width : 580px' height="500px">
+    <div class="border-container">
+        <div class="charts">
+            <div class="chart">
+                <canvas id="chartSales"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+<div height="50px">
+    <div class="content-chart">
+        <div class="bar-chart">
+            <div class="chart">
+            </div>            
+            <canvas id="chartRevenuePerLocation" height="185px"></canvas>
+        </div>
+    </div>
+</div>
+      
+
+<!-- Chart Monthly Revenue -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const chartSales = document.getElementById("chartSales")
+    const rendercoffeeShopSales = (labels, data) => {
+        new Chart(chartSales, {
+        type : 'line',
+        data : {
+            labels : labels,
+            datasets : [
+                {
+                    label : "Total Monthly Revenue", 
+                    data : data,
+                    borderWidth : 2
+                }
+            ]
+        }
+    })
+}
+
+    // Render (nanti akan sinkron dengan json)
+    fetch("./json/coffeeShopSales.json")
+    .then((Response) => Response.json())
+    .then((Response) => {
+        let data = Response.datasets[0]
+       rendercoffeeShopSales(data.labels, data.data)
+    })
+
+    // Chart Revenue Per Location
+    const chartRevenuePerLocation = document.getElementById("chartRevenuePerLocation")
+    new Chart(chartRevenuePerLocation, {
+        type : 'bar',
+        data : {
+            labels : ["Astoria", "Lower Manhattan", "Hell's Kitchen"],
+            datasets : [
+                {
+                    data : [232.244, 230.057, 235.511],
+                    label :"Revenue Per Location",
+                    backgroundColor : ["Green", "yellow", "red"],
+                    borderWidth : 3
+                }
+            ]
+        }
+    })
+    
+    
+    
+    
+</script>
+
+</body>
+</html>
