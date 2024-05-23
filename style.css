@@ -1,273 +1,189 @@
-/* h1 = 55px */
-/* h2 = 50px */
-
 body {
-  width: 100%;
-  font-family: poppins;
-  scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
-  background-color: #F3C796;
-  background-size: cover;
-  background-image: url("1609.m00.i125.n001.S.c12 1.jpg");
-  background-blend-mode: multiply;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-
-#welcome::before,
-#dataset::before,
-#benefit::before {
-  content: '';
-  display: block;
-  height: 60px; /* Sesuaikan dengan tinggi navbar Anda */
-  margin-top: -60px; /* Sesuaikan dengan tinggi navbar Anda */
-  visibility: hidden;
-}
-
-.container {
-  height: 650px;
-
-}
-
-nav {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: left;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-  background-color: #D29C75;
-  position: fixed;
-  top: 0; 
-  left: 0; 
-  z-index: 1000; 
-}
-
-nav a {
-  color: white;
-  margin-left: 15px;
-  margin-right: 20px;
-}
-nav a:hover {
-  transform: scale(1.1)
-}
-nav img {
-  height: 50px;
-  width:50px;
-  border-radius: 50%;
-  margin-left: 800px
-}
-.welcome h1 {
-  color: brown;
-  font-weight: bold;
-  font-size: 55px;
-  margin-left: 50px;
-  margin-top: 75px;
-}
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 120px;
-}
-#explore {
-  background-color: #D29C75;
-  border: none;
-  padding: 10px 15px;
-  width: 340px;
-  height: 100px;
-  border-radius: 25px;
-  font-size: 30px;
-  font-weight: 800;
-  opacity: 60%;
-}
-a {
-  color: white;
-  font-family: poppins;
-  text-decoration: none;
-}
-.button:hover {
-  transform: scale(1.1);
-}
-
-.coffee {
-  display: flex;
-  justify-content: right;
-  flex-direction: row;
-  margin-right: 70px;
-  margin-top: 80px;
-}
-.coffee h2 i{
-  color: brown;
-  font-size: 30px;
-}
-.coffee img {
-  width: 150px;
-}
-
-.container2 {
-  margin-top: -130px;
-  height: 250px;
-  align-items: center;
-  display: block;
-  
-}
-
-
-
-.container2 h2 {
-  color: white;
-  font-size: 50px;
-  margin-left: 50px;
-  margin-top: 40px;
-  margin-bottom: 10px;
-}
-
-.container2 h3 {
-  font-size: 25px;
-  display: block;
-  line-height: 10px;
-  color: white;
-  margin-left: 110px;
-}
-
-.container2 h3 a {
-  font-style: italic;
-  text-decoration: underline;
-}
-
-.container2 img {
-  height: 15rem; 
-  margin-left: 25rem;
-  display: flex;
-  margin-bottom: 15rem;
-  width: 25rem;
-}
-
-.container3 {
-  height: 18rem;
-  margin-top: 18rem;
-  background-color: #D29C75;
-  background-size: cover;
-  background-image: url("1609.m00.i125.n001.S.c12 1.jpg");
-  background-blend-mode: multiply;
-}
-
-.container3 h2 {
-  color: white;
-  font-size: 50px;
-  margin-left: 45px;
-}
-
-.container3 h3 {
-  margin-left: 350px;
-  line-height: 15px; 
-  color: white;
-  font-style: italic;
-  font-weight: 300;
-}
-.line1 {
-  display: flex;
-  align-items: flex-start;
-  margin-top: -100px;
-  margin-left: 0;
-}
-.benefit-list {
-  text-align: justify;
-  color: white;
-  margin-top: 20px;
-  margin-left: 350px;
-}
-.container4 {
-  justify-content: center;
-  display: flex;
-  align-items: center; 
-  gap: 10px; 
-  color: white;
-}
-
-.line3, .line4 {
-  width: 700px; 
-  height: 2px;
-  background-color: white;
-}
-
-ion-icon {
-  font-size: 30px; /* Adjust icon size as needed */
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  font-size: 10px;
-  color: white;
-}
-@media screen and (max-width: 480px) {
-  body {
-    overflow-x: hidden;
-  }
-  nav a {
-    font-size: 14.5px;
-    margin-left: 3.6px;
-    margin-right: 20px;
-  }
-  .container h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  .welcome h1 {
-    margin-left: 15px;
-  }
-  .coffee {
-    margin-left: 15px;
-  }
-  .coffee img {
-    width: 170px;
-    height: 200px;
-  }
-  .container h2 {
-    margin-top: 5px;
-  }
-  .container2 {
-    margin-top: 120px;
-     display: flex;
-     flex-direction: column;
-  }
-  .container2 img {
-    width: 20rem;
-    height: 12rem;
-    margin-left: 0;
-  }
-  .container3 {
+ /* Navigation */
+.navbar {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f3c796;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    height: 21rem;
-    margin-top: 15rem
-  }
-  .container3 #benefit {
-    margin-left: 38px;
-    margin-top: 15px;
-  }
-  .container3 h3 {
-    margin-left: 38px;
-    margin-top: 0px;
-  }
-  .benefit-list {
-    margin-top: 32px;
-    margin-left: 15px;
-  }
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0,1);
 }
 
-@media screen and (max-width: 320px) {
-  body {
-    overflow: hidden;
-  }
+/* Logo */
+.logo {
+    margin-bottom: 20px;
+}
 
-  .container2 img {
+.logo img {
+    max-width: 250px;
+}
+
+
+ /* Navigation Items */
+ .navbar {
     display: flex;
-  justify-content: right;
-  flex-direction: row;
-  }
+    flex-direction: column;
+ }
 
+ .nav-items {
+    display: flex;
+    flex-direction: column;
+ }
+
+.nav-item {
+    border-radius: 20px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin-top: 5px;
+    padding-top: 20px;
+    color: black;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 5px;
 }
+
+.nav-item i {
+    margin-right: 12px;
+    font-size: 16px;
+}
+
+.nav-item span {
+    font-size: 16px;
+}
+
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard */
+.content {
+    margin-left: 200px;
+    padding: 20px
+}
+
+/* Scorecard */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-icon {
+    position: absolute;
+    color : #f3c796;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 50px;
+}
+/* Score Card */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: #d3d3d3;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0,1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex: 1 1 21%;
+    min-width: 250px;
+    max-width: calc(25% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-content span {
+    margin: 5px 0 0;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+.card-icon {
+    font-size: 40px;
+    color: #F4B183;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%
+    }
+}
+
+
+/* Chart */
+canvas {
+    width: 100%;
+    padding: auto;
+}
+
+.content-chart {
+    border: 1px solid grey;
+    border-radius: 2px;
+    position: absolute;
+    color : #f3c796;
+    right: 0;
+    top: 0;
+    padding: 20px 0;
+    margin-top: 300px;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-bottom: 500px;
+    font-size: 500px;
+}
+
+#chartRevenuePerLocation {
+    margin: 33px;
+    margin-bottom: 30px;
+    margin-right: 35px;
+}
+.border-container {
+    grid-template-columns: 80% 1fr;
+    border: 1px solid grey;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 50px;
+}
+
