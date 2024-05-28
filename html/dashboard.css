@@ -22,12 +22,11 @@ body {
 /* Logo */
 .logo {
     margin-bottom: 20px;
+    padding: 15px;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 50px;
 }
-
-.logo img {
-    max-width: 250px;
-}
-
 
  /* Navigation Items */
  .navbar {
@@ -81,16 +80,28 @@ body {
     margin-bottom: 20px;
 }
 
-.user-icon {
+
+.bar-icon {
     position: absolute;
     color : #f3c796;
     right: 0;
     top: 0;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 15px;
+    margin-top: 35px;
     margin-right: 20px;
-    font-size: 50px;
+    font-size: 30px;
 }
+
+.bell-icon {
+    color : #f3c796;
+    padding: 18px;
+    margin-top: 13px;
+    margin-right: 55px;
+    font-size: 30px;
+}
+
+
+
 /* Score Card */
 .cards {
     display: flex;
