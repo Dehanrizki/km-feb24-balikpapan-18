@@ -118,7 +118,7 @@ a {
   color: white;
   font-size: 50px;
   margin-left: 50px;
-  margin-top: 40px;
+  margin-top: 65px;
   margin-bottom: 10px;
 }
 
@@ -139,13 +139,13 @@ a {
   height: 15rem; 
   margin-left: 25rem;
   display: flex;
-  margin-bottom: 15rem;
+  margin-bottom: 18rem;
   width: 25rem;
 }
 
 .container3 {
   height: 18rem;
-  margin-top: 18rem;
+  margin-top: 20rem;
   background-color: #D29C75;
   background-size: cover;
   background-image: url("../img asset/Background 2.png");
@@ -412,7 +412,19 @@ ion-icon {
   top: 135px;
 }
 
-.contact-us .masukan {
+.contact-us {
+  display: flex;
+  flex-direction: row;
   width: 50%;
-  text-align: right;
+  height: 17rem;
+  margin-top: 2rem;
+  margin-left: 20rem;
+}
+.masukan {
+  margin-left: 30rem;
+}
+
+input[type= "text"], input[type="email"], textarea {
+  border: none;
+  border-radius: 3px;
 }
