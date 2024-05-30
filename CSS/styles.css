@@ -258,6 +258,22 @@ ion-icon {
     margin-top: 32px;
     margin-left: 15px;
   }
+  .masukan {
+    margin-top: 15rem;
+    margin-left: 7rem;
+  }
+  .contact-us .email {
+    margin-top: 5rem;
+  }
+  .email-icon {
+    margin-top: 0.4rem;
+  }
+  .ig-icon {
+    margin-top: 2.5rem;
+  }
+  .contact-us .ig {
+    margin-top: 3.5rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -384,7 +400,7 @@ ion-icon {
 
 
 .contact-tagline {
-  line-height: 10px;
+  line-height: 25px;
   font-size: 20px;
   color: white;
 }
@@ -412,19 +428,7 @@ ion-icon {
   top: 135px;
 }
 
-.contact-us {
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-  height: 17rem;
-  margin-top: 2rem;
-  margin-left: 20rem;
-}
-.masukan {
-  margin-left: 30rem;
-}
-
 input[type= "text"], input[type="email"], textarea {
   border: none;
   border-radius: 3px;
-}
+} */
