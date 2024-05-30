@@ -1,8 +1,15 @@
 {
-    "datasets" : [
-        {
-            "labels" : ["Januari 2023", "Februari 2023", "Maret 2023", "April 2023", "Mei 2023", "Juni 2023"],
-            "data" : [81.7 , 76.1 , 98.8, 118.9, 156.7, 166.5]
-        }
-    ]
+  "datasets": [
+    {
+      "labels": [
+        "Januari 2023",
+        "Februari 2023",
+        "Maret 2023",
+        "April 2023",
+        "Mei 2023",
+        "Juni 2023"
+      ],
+      "data": [81.7, 76.1, 98.8, 118.9, 156.7, 166.5]
+    }
+  ]
 }
