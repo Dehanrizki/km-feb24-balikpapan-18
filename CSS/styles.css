@@ -10,7 +10,7 @@ body {
   padding: 0;
   background-color: #f3c796;
   background-size: cover;
-  background-image: url("../img asset/Main Background.jpg");
+  background-image: url("../img/Main Background.jpg");
   background-blend-mode: multiply;
 }
 
@@ -145,7 +145,7 @@ a {
   margin-top: 20rem;
   background-color: #d29c75;
   background-size: cover;
-  background-image: url("../img asset/Background 2.png");
+  background-image: url("../img/Background 2.png");
   background-blend-mode: multiply;
 }
 
