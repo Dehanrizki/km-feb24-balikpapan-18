@@ -255,6 +255,9 @@ ion-icon {
     margin-top: 32px;
     margin-left: 15px;
   }
+  .contact-wrap {
+    height: 17rem;
+  }
   .contact-us .email {
     margin-top: 3.8rem;
   }
