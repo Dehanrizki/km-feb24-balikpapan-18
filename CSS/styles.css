@@ -343,3 +343,20 @@ ion-icon {
   top: 135px;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #D29C75;
+    color: white;
+    text-align: center;
+    flex-direction: column; 
+  }
+  
+  .footer h2 {
+    line-height: 4px;
+  }
+  
+
