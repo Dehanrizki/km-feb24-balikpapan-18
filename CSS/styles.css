@@ -1,0 +1,397 @@
+/* h1 = 55px */
+/* h2 = 50px */
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: poppins;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: #f3c796;
+  background-size: cover;
+  background-image: url("../img/Main Background.jpg");
+  background-blend-mode: multiply;
+}
+
+#welcome::before,
+#dataset::before,
+#benefit::before {
+  content: "";
+  display: block;
+  height: 60px; /* Sesuaikan dengan tinggi navbar Anda */
+  margin-top: -60px; /* Sesuaikan dengan tinggi navbar Anda */
+  visibility: hidden;
+}
+
+.container {
+  height: 650px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #d29c75;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+nav a:hover {
+  transform: scale(1.1);
+}
+nav img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 800px;
+}
+.welcome h1 {
+  color: brown;
+  font-weight: bold;
+  font-size: 55px;
+  margin-left: 50px;
+  margin-top: 65px;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+}
+#explore {
+  background-color: #d29c75;
+  border: none;
+  padding: 10px 15px;
+  width: 340px;
+  height: 100px;
+  border-radius: 25px;
+  font-size: 30px;
+  font-weight: 800;
+  opacity: 60%;
+}
+a {
+  color: white;
+  font-family: poppins;
+  text-decoration: none;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+
+.coffee {
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  margin-right: 70px;
+  margin-top: 80px;
+}
+.coffee h2 i {
+  color: brown;
+  font-size: 30px;
+}
+.coffee img {
+  width: 150px;
+}
+
+.container2 {
+  margin-top: -130px;
+  height: 250px;
+  align-items: center;
+  display: block;
+}
+
+.container2 h2 {
+  color: white;
+  font-size: 50px;
+  margin-left: 50px;
+  margin-top: 65px;
+  margin-bottom: 10px;
+}
+
+.container2 h3 {
+  font-size: 25px;
+  display: block;
+  line-height: 10px;
+  color: white;
+  margin-left: 110px;
+}
+
+.container2 h3 a {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.container2 img {
+  height: 15rem;
+  margin-left: 25rem;
+  display: flex;
+  margin-bottom: 18rem;
+  width: 25rem;
+}
+
+.container3 {
+  height: 18rem;
+  margin-top: 20rem;
+  background-color: #d29c75;
+  background-size: cover;
+  background-image: url("../img/Background 2.png");
+  background-blend-mode: multiply;
+}
+
+.container3 h2 {
+  color: white;
+  font-size: 50px;
+  margin-left: 45px;
+}
+
+.container3 h3 {
+  margin-left: 350px;
+  line-height: 15px;
+  color: white;
+  font-style: italic;
+  font-weight: 300;
+}
+.line1 {
+  display: flex;
+  align-items: flex-start;
+  margin-top: -100px;
+  margin-left: 0;
+}
+.benefit-list {
+  text-align: justify;
+  color: white;
+  margin-top: 20px;
+  margin-left: 350px;
+}
+.container4 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.line3,
+.line4 {
+  width: 700px;
+  height: 2px;
+  background-color: white;
+}
+
+ion-icon {
+  font-size: 30px; /* Adjust icon size as needed */
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  color: white;
+}
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  height: 12rem;
+}
+
+.contact-wrap {
+  position: absolute;
+  margin-left: 38px;
+  width: 50%;
+  text-align: left;
+}
+
+.contact-tagline {
+  color: white;
+}
+.contact-tagline2 {
+  line-height: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.contact-desc img {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-desc .email {
+  position: absolute;
+  left: 40px;
+  top: 80px;
+}
+
+.email-icon {
+  position: absolute;
+  top: 95px;
+}
+
+.ig-icon {
+  position: absolute;
+  top: 150px;
+  left: 0px;
+}
+
+.ig {
+  position: absolute;
+  left: 40px;
+  top: 135px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #D29C75;
+    color: white;
+    text-align: center;
+    flex-direction: column; 
+  }
+  
+  .footer h2 {
+    line-height: 4px;
+  }
+  
+
+  @media screen and (max-width: 480px) {
+    body {
+      overflow-x: hidden;
+    }
+    nav a {
+      font-size: 14.5px;
+      margin-left: 3.6px;
+      margin-right: 20px;
+    }
+    .container {
+      margin-left: 15px;
+      height: 12rem;
+    }
+    .container h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .welcome h1 {
+      margin-left: 15px;
+      margin-top: 10px;
+    }
+    .coffee {
+      margin-left: 15px;
+    }
+    .coffee img {
+      width: 170px;
+      height: 200px;
+    }
+    .container h2 {
+      margin-top: 5px;
+    }
+    .container2 {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    .container2 img {
+      width: 20rem;
+      height: 12rem;
+      margin-left: 0;
+    }
+    .container3 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      height: 21rem;
+      margin-top: 15rem;
+    }
+    .container3 #benefit {
+      margin-left: 38px;
+      margin-top: 15px;
+    }
+    .container3 h3 {
+      margin-left: 38px;
+      margin-top: 0px;
+    }
+    .benefit-list {
+      margin-top: 32px;
+      margin-left: 15px;
+    }
+    .contact-wrap {
+      height: 18rem;
+    }
+    .contact-us .email {
+      margin-top: 3.8rem;
+    }
+    .email-icon {
+      margin-top: 3rem;
+    }
+    .ig-icon {
+      margin-top: 2.5rem;
+    }
+    .contact-us .ig {
+      margin-top: 3.5rem;
+    }
+    .contact-us .contact-tagline2 {
+      margin-top: 2px;
+      color: white;
+      line-height: 1.8rem;
+    }
+    .footer {
+      margin-top: 45px;
+      height: 5rem;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    body {
+      overflow: hidden;
+    }
+  
+    .container2 img {
+      display: flex;
+      justify-content: right;
+      flex-direction: row;
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  /* Tablet landscape */
+  @media screen and (max-width: 1024px) {
+    /* Adjustments for tablet landscape view */
+    .container {
+      padding-top: 100px; /* To accommodate the fixed nav bar */
+    }
+    nav a {
+      margin: 10px;
+    }
+    .welcome h1 {
+      font-size: 55px;
+    }
+    .coffee {
+      margin-top: 50px;
+      margin-left: 15px;
+      text-align: center;
+    }
+    .coffee img {
+      margin-top: 20px;
+      width: 170px;
+      height: 170px;
+    }
+    .container2 img {
+      margin: 0 auto;
+    }
+  }
