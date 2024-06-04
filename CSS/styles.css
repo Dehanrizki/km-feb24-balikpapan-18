@@ -275,6 +275,10 @@ ion-icon {
       margin-left: 3.6px;
       margin-right: 20px;
     }
+    .container {
+      margin-left: 15px;
+      height: 12rem;
+    }
     .container h3 {
       font-size: 24px;
       margin-bottom: 10px;
@@ -294,7 +298,7 @@ ion-icon {
       margin-top: 5px;
     }
     .container2 {
-      margin-top: 120px;
+      margin-top: 10px;
       display: flex;
       flex-direction: column;
     }
@@ -324,7 +328,7 @@ ion-icon {
       margin-left: 15px;
     }
     .contact-wrap {
-      height: 17rem;
+      height: 18rem;
     }
     .contact-us .email {
       margin-top: 3.8rem;
