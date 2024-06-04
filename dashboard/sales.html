@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sales.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <div class="logo">
+        <i class="fa fa-user-circle" aria-hidden="true"></i>
+      </div>
+      <div class="nav-item" id="nav-dashboard">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <span>Dashboard</span>
+      </div>
+      <div class="nav-item" id="nav-sales">
+        <i class="fa fa-line-chart" aria-hidden="true"></i>
+        <span>Sales</span>
+      </div>
+      <div class="nav-item" id="Analytics">
+        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <span>Analytics</span>
+      </div>
+      <div class="nav-item" id="Setting">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+        <span>Setting</span>
+      </div>
+      <div class="nav-item" id="Signout">
+        <i class="fa fa-sign-out" aria-hidden="true"></i>
+        <span>Signout</span>
+      </div>
+    </div>
+    <!-- Dashboard -->
+    <div class="content">
+      <div class="header">
+        <h1>Coffee Shop Sales</h1>
+      </div>
+    </div>
+
+    <!-- Chart Revenue Selling Product -->
+    <div id="best-selling">
+      <div class="selling-product">
+        <div class="bar-chart">
+          <div class="chart">
+            <canvas
+              id="chartRevenueSellingProduct"
+              width="500px"
+              height="250px"
+            ></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart Total Sales By Location -->
+    <div id="sales-location">
+      <div class="sales-locate">
+        <div class="bar-chart">
+          <div class="chart">
+            <canvas
+              id="chartSalesLocation"
+              width="500px"
+              height="250px"
+            ></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart Transaction Quantity Of Product Per Store  -->
+    <div id="quantity-location">
+      <div class="quantity-locate">
+        <div class="bar-chart">
+          <div class="chart">
+            <canvas
+              id="chartQuantityLocate"
+              width="500px"
+              height="250px"
+            ></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart Revenue Product Category Per Store  -->
+    <div id="revenue-product">
+      <div class="revenue-store">
+        <div class="bar-chart">
+          <div class="chart">
+            <canvas
+              id="chartRevenueProduct"
+              width="500px"
+              height="250px"
+            ></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top 1 Transacted Product in Each Store -->
+    <div id="top-one">
+      <div class="top-transaction">
+        <div class="bar-chart">
+          <div class="chart">
+            <canvas
+              id="chartTopOne"
+              width="400px"
+              height="200px"
+            ></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="sales.js"></script>
+  </body>
+</html>
