@@ -1,7 +1,6 @@
-
 body {
   margin: 0;
-  font-family: 'poppins';
+  font-family: "poppins";
   font-size: 13px;
 }
 /* Navigation */
@@ -298,7 +297,7 @@ canvas {
   height: 70vh; /* Full viewport height to center vertically */
   background-color: #ffffff;
   padding: 20px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .form-container form {
@@ -327,7 +326,7 @@ canvas {
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box; /* Ensure padding does not affect width */
+  box-sizing: border-box;
 }
 
 .form-container form button {
@@ -339,7 +338,69 @@ canvas {
 }
 
 .form-container form button:hover {
-  background-color: #e0b580; /* Slightly darker on hover */
+  background-color: #e0b580;
 }
 
+@media (max-width: 991px) {
+  .navbar {
+    position: fixed;
+    transform: translateX(-200px);
+  }
 
+  .navbar-toggle {
+    display: block;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adding margin between cards and charts */
+  }
+
+  .card {
+    flex: 1 1 calc(48% - 10px); /* Adjusting width to fit two cards per row with space between them */
+    max-width: calc(48% - 10px);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .card-icon {
+    font-size: 3rem;
+    color: #f4b183;
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+
+  .card-content {
+    flex-grow: 1;
+  }
+
+  .content-chart {
+    display: flex;
+    margin-top: 1200px;
+  }
+
+  .product-chart {
+    display: flex;
+    margin-top: 1150px;
+   
+  }
+
+  #filterContainer {
+    display: flex;
+    margin-top: 350px;
+  }
+
+  .content-chart {
+    display: flex;
+    margin-top: 815px;
+    margin-right: 345px;
+  }
+}

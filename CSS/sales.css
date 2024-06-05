@@ -66,3 +66,92 @@ body {
   .nav-item:hover {
     background-color: rgba(0, 0, 0, 0.1);
   }
+
+  /* Dashboard */
+  .content {
+    margin-left: 200px;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  /* Canvas */
+  canvas {
+    width: 100%;
+    padding: auto;
+  }
+
+  /* Chart Best Selling Product */
+  #best-selling {
+    border: 1px solid grey;
+    border-radius: 2px;
+    position: absolute;
+    color: #f3c796;
+    right: 0;
+    top: 0;
+    padding: 20px 0;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 590px;
+    margin-bottom: 500px;
+    font-size: 500px;
+  }
+
+  /* Chart Total Sales By Location */
+  #sales-location {
+    border: 1px solid grey;
+    border-radius: 2px;
+    position: absolute;
+    color: #f3c796;
+    right: 0;
+    top: 0;
+    padding: 25px 0;
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 25px;
+    font-size: 500px;
+  }
+
+  /* Chart Total Sales By Location */
+  #quantity-location {
+    border: 1px solid grey;
+    border-radius: 2px;
+    position: absolute;
+    color: #f3c796;
+    right: 0;
+    top: 0;
+    padding: 25px 0;
+    margin-top: 500px;
+    margin-left: 100px;
+    margin-right: 590px;
+    font-size: 500px;
+  }
+  
+  /* Chart Revenue Of Product Category Per Store */
+  #revenue-product {
+    border: 1px solid grey;
+    border-radius: 2px;
+    position: absolute;
+    color: #f3c796;
+    right: 0;
+    top: 0;
+    padding: 25px 0;
+    margin-top: 500px;
+    margin-left: 100px;
+    margin-right: 25px;
+    font-size: 500px;
+  }
+
+  /* Chart Top 1 Transaction Product in Each Store*/
+  #top-one {
+    border: 1px solid grey;
+    border-radius: 2px;
+    position: absolute;
+    color: #f3c796;
+    right: 0;
+    top: 0;
+    padding: 25px 0;
+    margin-top: 880px;
+    margin-left: 100px;
+    margin-right: 350px;
+    font-size: 500px;
+  }
