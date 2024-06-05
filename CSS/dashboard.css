@@ -323,6 +323,8 @@ body {
    }
   .chart {
      width: 100%;
+     margin-top: 40px;
+
    }
   .form-container {
      height: 50vh;
@@ -355,6 +357,7 @@ body {
    }
   .chart {
      width: 100%;
+     margin-top: 40px;
    }
   .form-container {
      height: 50vh;
