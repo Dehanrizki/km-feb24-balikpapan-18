@@ -1,12 +1,12 @@
+/* General styles */
 body {
   margin: 0;
   font-family: "poppins";
   font-size: 13px;
 }
+
 /* Navigation */
 .navbar {
-  display: grid;
-  grid-template-columns: 50% 50%;
   position: fixed;
   top: 0;
   left: 0;
@@ -17,22 +17,13 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0, 1);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s; /* add transition effect */
 }
 
-/* Logo */
 .logo {
-  margin-bottom: 20px;
-  padding: 15px;
-  margin-left: 10px;
-  margin-top: 30px;
-  font-size: 50px;
-}
-
-/* Navigation Items */
-.navbar {
-  display: flex;
-  flex-direction: column;
+  margin: 10px;
+  font-size: 30px;
 }
 
 .nav-items {
@@ -46,20 +37,14 @@ body {
   display: flex;
   align-items: center;
   padding: 15px 20px;
-  margin-top: 5px;
-  padding-top: 20px;
+  margin: 5px 0;
   color: black;
   cursor: pointer;
   transition: background 0.3s;
-  margin-bottom: 5px;
 }
 
 .nav-item i {
   margin-right: 12px;
-  font-size: 16px;
-}
-
-.nav-item span {
   font-size: 16px;
 }
 
@@ -81,17 +66,6 @@ body {
   margin-bottom: 20px;
 }
 
-.bar-icon {
-  position: absolute;
-  color: #f3c796;
-  right: 0;
-  top: 0;
-  padding: 15px;
-  margin-top: 40px;
-  margin-right: 20px;
-  font-size: 30px;
-}
-
 /* Score Card */
 .cards {
   display: flex;
@@ -100,19 +74,17 @@ body {
 }
 
 .card {
-  flex: 1;
   background-color: #d3d3d3;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  flex: 1 1 21%;
-  min-width: 50px;
-  max-width: calc(25% - 20px);
+  flex: 1 1 calc(25% - 20px);
   box-sizing: border-box;
   transition: transform 0.2s;
+  margin-bottom: 20px;
 }
 
 .card:hover {
@@ -127,79 +99,14 @@ body {
 }
 
 .card-content span {
-  margin: 5px 0 0;
+  margin: 5px 0;
   color: #333;
-  line-height: 1;
 }
 
 .card-icon {
   font-size: 40px;
   color: #f4b183;
 }
-
-@media (max-width: 100px) {
-  .card {
-    flex: 1 1 45%;
-  }
-}
-
-@media (max-width: 7px) {
-  .card {
-    flex: 1 1 100%;
-  }
-}
-
-/* Chart */
-canvas {
-  width: 100%;
-  padding: auto;
-}
-
-.content-chart {
-  border: 1px solid grey;
-  border-radius: 2px;
-  position: absolute;
-  color: #f3c796;
-  right: 0;
-  top: 0;
-  padding: 20px 0;
-  margin-top: 322px;
-  margin-left: 50px;
-  margin-right: 25px;
-  margin-bottom: 500px;
-  font-size: 500px;
-}
-
-#chartRevenuePerLocation {
-  margin: 33px;
-  margin-bottom: 30px;
-  margin-right: 35px;
-}
-.border-container {
-  grid-template-columns: 80% 1fr;
-  border: 1px solid grey;
-  border-radius: 2px;
-  padding: 10px;
-  margin: 10px;
-  margin-top: 50px;
-}
-
-/* feedback */
-.feedback {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0, 1);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.feedback.show {
-  opacity: 1;
-}
-
 /* Modal */
 
 .modal-btn {
@@ -248,6 +155,24 @@ canvas {
   cursor: pointer;
 }
 
+/* Chart */
+.charts-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.chart {
+  width: 48%;
+  border: 1px solid #ccc;
+}
+
+.chart canvas {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 /* Container for filters */
 #filterContainer {
   margin-top: 20px;
@@ -255,8 +180,23 @@ canvas {
   background-color: #ffd966;
   border-radius: 5px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.filter {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.chart-container2 {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.chart-container2 canvas {
+  max-width: 100%;
+  height: auto;
 }
 
 #filterContainer label {
@@ -273,28 +213,13 @@ canvas {
   border-radius: 3px;
 }
 
-.product-chart {
-  border: 1px solid grey;
-  border-radius: 2px;
-  position: absolute;
-  color: #f3c796;
-  right: 0;
-  top: 0;
-  padding: 25px 0;
-  margin-top: 650px;
-  margin-left: 100px;
-  margin-right: 250px;
-  font-size: 250px;
-}
-
 /* Form Container */
 .form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 70vh; /* Full viewport height to center vertically */
+  height: 70vh;
   background-color: #ffffff;
   padding: 20px;
   box-sizing: border-box;
@@ -305,10 +230,10 @@ canvas {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 400px; /* Maximum width for the form */
+  max-width: 400px;
   background-color: white;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for the form */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
 
@@ -339,101 +264,6 @@ canvas {
 
 .form-container form button:hover {
   background-color: #e0b580;
-}
-
-@media (max-width: 991px) {
-  .navbar {
-    position: fixed;
-    transform: translateX(-200px);
-  }
-
-  .navbar-toggle {
-    display: block;
-  }
-
-  .content {
-    margin-left: 0;
-    padding: 10px;
-  }
-
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 20px; /* Adding margin between cards and charts */
-  }
-
-  .card {
-    flex: 1 1 calc(48% - 10px); /* Adjusting width to fit two cards per row with space between them */
-    max-width: calc(48% - 10px);
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-
-  .card-icon {
-    font-size: 3rem;
-    color: #f4b183;
-    flex-shrink: 0;
-    margin-right: 10px;
-  }
-
-  .card-content {
-    flex-grow: 1;
-  }
-
-  .content-chart {
-    display: flex;
-    margin-top: 1200px;
-  }
-
-  .product-chart {
-    display: flex;
-    margin-top: 1150px;
-   
-  }
-
-  #filterContainer {
-    display: flex;
-    margin-top: 350px;
-  }
-
-  .content-chart {
-    display: flex;
-    margin-top: 815px;
-    margin-right: 345px;
-  }
-}
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-
-
-@media only screen and (max-width: 480px) {
-  body {
-    overflow-x: hidden;
-  }
- .dashboard-container {
-    width: 100%;
-    padding: 20px;
-  }
- .sidebar {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translateX(-100%);
-    transition: transform 0.3s;
-  }
- .bar-icon {
-    display: block;
-    cursor: pointer;
-  }
- .bar-icon:hover +.sidebar {
-    transform: translateX(0);
-  }
- .sidebar.open {
-    transform: translateX(0);
-  }
 }
 
 /* Style for sidebar toggle button */
@@ -471,3 +301,132 @@ canvas {
   color: #fff;
   text-decoration: none;
 }
+/* Mobile portrait */
+@media only screen and (max-width: 480px) {
+  .navbar {
+    width: 0;
+    overflow: hidden;
+    display: none; /* hide navbar on small screens */
+  }
+   .content {
+    margin-left: 0; /* remove margin on small screens */
+    width: 100%; /* make content full-width on small screens */
+  }
+  .cards {
+     flex-wrap: wrap;
+   }
+  .card {
+     flex: 1 1 calc(50% - 20px);
+   }
+  .charts-container {
+     flex-direction: column;
+   }
+  .chart {
+     width: 100%;
+   }
+  .form-container {
+     height: 50vh;
+   }
+   .chart-container2 {
+    max-width: 300px;
+    margin: 10px auto;
+  }
+ }
+ 
+ /* Mobile landscape */
+ @media only screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+     width: 150px;
+   }
+  .nav-item {
+     width: 120px;
+   }
+  .content {
+     margin-left: 150px;
+   }
+  .cards {
+     flex-wrap: wrap;
+   }
+  .card {
+     flex: 1 1 calc(33% - 20px);
+   }
+  .charts-container {
+     flex-direction: column;
+   }
+  .chart {
+     width: 100%;
+   }
+  .form-container {
+     height: 50vh;
+   }
+   .chart-container2 {
+    max-width: 350px;
+    margin: 15px auto;
+  }
+ }
+ 
+ /* Tablet portrait */
+ @media only screen and (min-width: 768px) and (max-width: 834px) {
+  .navbar {
+     width: 200px;
+   }
+  .nav-item {
+     width: 160px;
+   }
+  .content {
+     margin-left: 200px;
+   }
+  .cards {
+     flex-wrap: wrap;
+   }
+  .card {
+     flex: 1 1 calc(25% - 20px);
+   }
+  .charts-container {
+     flex-direction: column;
+   }
+  .chart {
+     width: 100%;
+     margin-top: 40px;
+   }
+  .form-container {
+     height: 50vh;
+   }
+   .chart-container2 {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+ }
+ 
+ /* Tablet landscape */
+ @media only screen and (min-width: 835px) and (max-width: 1090px) {
+  .navbar {
+     width: 200px;
+   }
+  .nav-item {
+     width: 100px;
+   }
+  .content {
+     margin-left: 250px;
+   }
+  .cards {
+     flex-wrap: wrap;
+   }
+  .card {
+     flex: 1 1 calc(20% - 20px);
+   }
+  .charts-container {
+     flex-direction: column;
+   }
+  .chart {
+     width: 100%;
+     margin-top: 40px;
+   }
+  .form-container {
+     height: 50vh;
+   }
+   .chart-container2 {
+    max-width: 450px;
+    margin: 25px auto;
+  }
+ }
