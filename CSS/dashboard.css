@@ -404,3 +404,70 @@ canvas {
     margin-right: 345px;
   }
 }
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+
+
+@media only screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+ .dashboard-container {
+    width: 100%;
+    padding: 20px;
+  }
+ .sidebar {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+  }
+ .bar-icon {
+    display: block;
+    cursor: pointer;
+  }
+ .bar-icon:hover +.sidebar {
+    transform: translateX(0);
+  }
+ .sidebar.open {
+    transform: translateX(0);
+  }
+}
+
+/* Style for sidebar toggle button */
+.bar-icon {
+  font-size: 24px;
+  color: #333;
+  padding: 10px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+
+.bar-icon:hover {
+  background: #f0f0f0;
+}
+
+/* Style for sidebar */
+.sidebar {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
