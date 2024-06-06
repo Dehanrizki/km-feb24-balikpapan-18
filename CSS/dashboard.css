@@ -224,7 +224,6 @@ body {
   padding: 20px;
   box-sizing: border-box;
 }
-
 .form-container form {
   display: flex;
   flex-direction: column;
@@ -314,17 +313,19 @@ body {
   }
   .cards {
      flex-wrap: wrap;
+     padding-right: 35px;
    }
   .card {
      flex: 1 1 calc(50% - 20px);
    }
   .charts-container {
      flex-direction: column;
+     margin-top: 10px;
    }
   .chart {
      width: 100%;
-     margin-top: 40px;
-
+     margin-top: 20px;
+     height: 12rem;
    }
   .form-container {
      height: 50vh;
@@ -332,6 +333,10 @@ body {
    .chart-container2 {
     max-width: 300px;
     margin: 10px auto;
+    margin-left: 5px;
+  }
+  .filter {
+    height: 10rem;
   }
  }
  
