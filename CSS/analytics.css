@@ -46,12 +46,10 @@ body {
     display: flex;
     align-items: center;
     padding: 15px 20px;
-    margin-top: 5px;
-    padding-top: 20px;
+    margin: 5px 0;
     color: black;
     cursor: pointer;
     transition: background 0.3s;
-    margin-bottom: 5px;
   }
   
   .nav-item i {
@@ -59,14 +57,14 @@ body {
     font-size: 16px;
   }
   
-  .nav-item span {
-    font-size: 16px;
-  }
-  
   .nav-item:hover {
     background-color: rgba(0, 0, 0, 0.1);
   }
   
+  .nav-item a {
+    text-decoration: none;
+    color: black;
+  }
   /* Dashboard */
   .content {
     margin-left: 200px;
