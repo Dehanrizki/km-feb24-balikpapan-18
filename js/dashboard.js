@@ -35,7 +35,7 @@ const rendercoffeeShopSales = (labels, data) => {
 };
 
 // Render (nanti akan sinkron dengan json)
-fetch("../Data/coffeeShopSales.json")
+fetch("../data/coffeeShopSales.json")
   .then((Response) => Response.json())
   .then((Response) => {
     let data = Response.datasets[0];
