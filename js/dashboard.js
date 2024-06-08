@@ -53,8 +53,8 @@ new Chart(chartRevenuePerLocation, {
     labels: ["Astoria", "Lower Manhattan", "Hell's Kitchen"],
     datasets: [
       {
-        data: [232.244, 230.057, 235.511],
-        label: "Revenue Per Location",
+        data: [232243.91, 230057.25, 236511.17],
+        label: "Total Revenue Each Location",
         backgroundColor: ["Green", "yellow", "red"],
         borderWidth: 3,
       },
@@ -69,11 +69,11 @@ const chartTransactionProduct = document.getElementById(
 new Chart(chartTransactionProduct, {
   type: "bar",
   data: {
-    labels: ["Coffe", "Tea", "Bakery", "Drinking"],
+    labels: ["Bakery", "Branded", "Coffee", "Coffee Beans", "Drinking Chocolate", "Flavours", "Loose Tea", "Package Chocolate", "Tea"],
     datasets: [
       {
-        data: [50, 59, 54, 38, 44, 61],
-        label: "Transaction Product Of Quantity",
+        data: [23214, 776, 89250, 1828, 17457, 10511, 1210, 487, 69737],
+        label: "Transaction Quantity Of Product Category",
         backgroundColor: ["chocolate", "green", "white", "Blue"],
         borderWidth: 3,
       },

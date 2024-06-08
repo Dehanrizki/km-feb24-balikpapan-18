@@ -5,10 +5,10 @@ const chartRevenueSellingProduct = document.getElementById(
   new Chart(chartRevenueSellingProduct, {
     type: "bar",
     data: {
-      labels: ["Coffee", "Tea", "Bakery", "Drink"],
+      labels: ["Sustainably Grown Organic Lg", "Dark chocolate Lg", "Latte Rg", "Cappuccino Lg", "Morning Sunrise Chai Lg"],
       datasets: [
         {
-          data: [21.151, 21.006, 19.112, 17.641],
+          data: [21151.75, 21006, 19112.25,17641.75, 17384],
           label: "Top Selling Product",
           backgroundColor: ["Yellow"],
           borderWidth: 3,
