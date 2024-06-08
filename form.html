@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/form.css" />
+    <title>Document</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="./js/form.js"></script>
+    <script type="text/javascript">
+      // Inisialisasi EmailJS saat DOMContentLoaded
+      document.addEventListener('DOMContentLoaded', (event) => {
+        emailjs.init("oOmaDx4cj7TuoXA5p"); // Perubahan: Pindahkan inisialisasi ke dalam DOMContentLoaded event
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <div class="logo">
+        <i class="fa fa-user-circle" aria-hidden="true"></i>
+      </div>
+      <div class="nav-item" id="nav-dashboard">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <span><a href="dashboard.html">Dashboard</a></span>
+      </div>
+      <div class="nav-item" id="nav-sales">
+        <i class="fa fa-line-chart" aria-hidden="true"></i>
+        <span><a href="sales.html">Sales</a></span>
+      </div>
+      <div class="nav-item" id="Analytics">
+        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <span><a href="analytics.html">Analytics</a></span>
+      </div>
+      <div class="nav-item" id="Setting">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+        <span>Feedback Box</span>
+      </div>
+      <div class="nav-item" id="Signout">
+        <i class="fa fa-sign-out" aria-hidden="true"></i>
+        <span>Signout</span>
+      </div>
+    </div>
+
+    <!-- Form Masukan -->
+    <div class="form-container">
+      <form id="feedbackForm">
+        <label for="name">Name</label> <!-- Perubahan: Menggunakan atribut for untuk menghubungkan label dengan input -->
+        <input type="text" id="name" placeholder="John Doe" required />
+
+        <label for="email">Email</label> <!-- Perubahan: Menggunakan atribut for untuk menghubungkan label dengan input -->
+        <input type="email" id="email" placeholder="john@gmail.com" required />
+
+        <label for="message">Message</label> <!-- Perubahan: Menggunakan atribut for untuk menghubungkan label dengan textarea -->
+        <textarea id="message" placeholder="" required></textarea>
+
+        <button type="button" onclick="sendMail()">Send</button> <!-- Perubahan: Mengubah type="submit" menjadi type="button" -->
+      </form>
+    </div>
+  </body>
+</html>
