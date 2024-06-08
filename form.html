@@ -21,9 +21,8 @@
     ></script>
     <script src="./js/form.js"></script>
     <script type="text/javascript">
-      // Inisialisasi EmailJS saat DOMContentLoaded
-      document.addEventListener('DOMContentLoaded', (event) => {
-        emailjs.init("oOmaDx4cj7TuoXA5p"); // Perubahan: Pindahkan inisialisasi ke dalam DOMContentLoaded event
+      document.addEventListener("DOMContentLoaded", (event) => {
+        emailjs.init("oOmaDx4cj7TuoXA5p"); 
       });
     </script>
   </head>
@@ -58,16 +57,16 @@
     <!-- Form Masukan -->
     <div class="form-container">
       <form id="feedbackForm">
-        <label for="name">Name</label> <!-- Perubahan: Menggunakan atribut for untuk menghubungkan label dengan input -->
+        <label for="name">Name</label>
         <input type="text" id="name" placeholder="John Doe" required />
 
-        <label for="email">Email</label> <!-- Perubahan: Menggunakan atribut for untuk menghubungkan label dengan input -->
+        <label for="email">Email</label>
         <input type="email" id="email" placeholder="john@gmail.com" required />
 
-        <label for="message">Message</label> <!-- Perubahan: Menggunakan atribut for untuk menghubungkan label dengan textarea -->
+        <label for="message">Message</label>
         <textarea id="message" placeholder="" required></textarea>
 
-        <button type="button" onclick="sendMail()">Send</button> <!-- Perubahan: Mengubah type="submit" menjadi type="button" -->
+        <button type="button" onclick="sendMail()">Send</button>
       </form>
     </div>
   </body>
