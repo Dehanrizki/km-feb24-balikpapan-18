@@ -15,7 +15,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./CSS/form.css" />
+<<<<<<< HEAD
     <title>Form</title>
+=======
+    <link rel="stylesheet" href="./CSS/navbar.css" />
+    <title>Document</title>
+>>>>>>> f460a4ceb9a215eaa4f38c8fe2481ed0f8f0f219
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
@@ -23,7 +28,7 @@
     <script src="./js/form.js"></script>
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", (event) => {
-        emailjs.init("oOmaDx4cj7TuoXA5p"); 
+        emailjs.init("oOmaDx4cj7TuoXA5p");
       });
     </script>
   </head>
@@ -51,6 +56,13 @@
       </div>
     </div>
 
+    <div class="content">
+      <div class="header">
+        <h1>Feedback</h1>
+        <div class="bar-icon">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+      </div>
     <!-- Form Masukan -->
     <div class="form-container">
       <form id="feedbackForm">
@@ -66,5 +78,7 @@
         <button type="button" onclick="sendMail()">Send</button>
       </form>
     </div>
+  </div>
+  <script src="./js/navbar.js"></script>
   </body>
 </html>

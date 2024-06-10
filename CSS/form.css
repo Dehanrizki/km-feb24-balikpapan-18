@@ -1,112 +1,128 @@
 /* General styles */
 body {
-    margin: 0;
-    font-family: "poppins";
-    font-size: 13px;
-  }
-  
-  /* Navigation */
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #f3c796;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    transition: width 0.3s; /* add transition effect */
-  }
-  
-  .logo {
-    margin-bottom: 20px;
-    padding: 15px;
-    margin-left: 10px;
-    margin-top: 30px;
-    font-size: 50px;
-  }
-  
-  .nav-items {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .nav-item {
-    border-radius: 20px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    padding: 15px 20px;
-    margin: 5px 0;
-    color: black;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .nav-item i {
-    margin-right: 12px;
-    font-size: 16px;
-  }
-  
-  .nav-item:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-item a {
-    text-decoration: none;
-    color: black;
-  }
+  margin: 0;
+  font-family: "poppins";
+  font-size: 13px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #f3c796;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s; /* add transition effect */
+}
 
-  .form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 70vh;
-    background-color: #ffffff;
-    padding: 20px;
-    box-sizing: border-box;
+.logo {
+  margin-bottom: 20px;
+  padding: 15px;
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 50px;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  border-radius: 20px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  margin: 5px 0;
+  color: black;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-item i {
+  margin-right: 12px;
+  font-size: 16px;
+}
+
+.nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+.content {
+  margin-left: 200px;
+  padding: 20px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form-container form label {
+  margin-top: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+.form-container form input,
+.form-container form textarea,
+.form-container form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-container form button {
+  background-color: #f3c796;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.form-container form button:hover {
+  background-color: #e0b580;
+}
+@media only screen and (max-width: 834px) {
+  .navbar {
+    width: 150px;
   }
-  .form-container form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 400px;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  .content {
+    margin-left: 160px;
   }
-  
-  .form-container form label {
-    margin-top: 10px;
-    width: 100%;
-    text-align: left;
-  }
-  
-  .form-container form input,
-  .form-container form textarea,
-  .form-container form button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  .form-container form button {
-    background-color: #f3c796;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .form-container form button:hover {
-    background-color: #e0b580;
-  }
+}

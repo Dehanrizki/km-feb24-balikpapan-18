@@ -1,66 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@200;300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./CSS/dashboard.css" />
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <div class="navbar">
-      <div class="logo">
-        <i class="fa fa-user-circle" aria-hidden="true"></i>
-      </div>
-      <div class="nav-item" id="nav-dashboard">
-        <i class="fa fa-home" aria-hidden="true"></i>
-        <span>Dashboard</span>
-      </div>
-      <div class="nav-item" id="nav-sales">
-        <i class="fa fa-line-chart" aria-hidden="true"></i>
-        <span><a href="sales.html">Sales</a></span>
-      </div>
-      <div class="nav-item" id="Analytics">
-        <i class="fa fa-bar-chart" aria-hidden="true"></i>
-        <span><a href="analytics.html">Analytics</a></span>
-      </div>
-      <div class="nav-item" id="Setting">
-        <i class="fa fa-cog" aria-hidden="true"></i>
-        <span><a href="form.html">Feedback Box</a></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@200;300;400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./CSS/dashboard.css" />
+  <link rel="stylesheet" href="./CSS/navbar.css" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="logo">
+      <i class="fa fa-user-circle" aria-hidden="true"></i>
+    </div>
+    <div class="nav-item" id="nav-dashboard">
+      <i class="fa fa-home" aria-hidden="true"></i>
+      <span>Dashboard</span>
+    </div>
+    <div class="nav-item" id="nav-sales">
+      <i class="fa fa-line-chart" aria-hidden="true"></i>
+      <span><a href="sales.html">Sales</a></span>
+    </div>
+    <div class="nav-item" id="Analytics">
+      <i class="fa fa-bar-chart" aria-hidden="true"></i>
+      <span><a href="analytics.html">Analytics</a></span>
+    </div>
+    <div class="nav-item" id="Setting">
+      <i class="fa fa-cog" aria-hidden="true"></i>
+      <span><a href="form.html">Feedback Box</a></span>
+    </div>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="content">
+    <div class="header">
+      <h1>Dashboard</h1>
+      <div class="bar-icon">
+        <i class="fa fa-bars" aria-hidden="true"></i>
       </div>
     </div>
 
-    <!-- Dashboard -->
-    <div class="content">
-      <div class="header">
-        <h1>Dashboard</h1>
-        <div class="bar-icon">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
+    <!-- Modal -->
+    <button id="myBtn" class="modal-btn">Describe Dashboard</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close"> &times;</span>
+        <p>
+          This Dashboard provides an overview of sales metrics, customer
+          Analytics, and performance trends.
+        </p>
       </div>
+    </div>
 
-      <!-- Modal -->
-      <button id="myBtn" class="modal-btn">Describe Dashboard</button>
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close"> &times;</span>
-          <p>
-            This Dashboard provides an overview of sales metrics, customer
-            Analytics, and performance trends.
-          </p>
+    <!-- ScoreCard -->
+    <div class="cards">
+      <div class="card">
+        <div class="card-content">
+          <h2>$698.812,330</h2>
+          <span>Total Revenue <br /> </span>
+        </div>
+        <div class="card-icon">
+          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
         </div>
       </div>
+      <div class="card">
+        <div class="card-content">
+          <h2>$58.234,360</h2>
+          <span
+            >Average Monthly <br />
+            Revenue</span
+          >
+        </div>
+        <div class="card-icon">
+          <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+        </div>
+      </div>
+<<<<<<< HEAD
 
       <!-- ScoreCard -->
       <div class="cards">
@@ -72,117 +94,61 @@
           <div class="card-icon">
             <i class="fa fa-shopping-basket" aria-hidden="true"></i>
           </div>
+=======
+      <div class="card">
+        <div class="card-content">
+          <h2>214.470</h2>
+          <span
+            >Total Transaction <br />
+            Quantity</span
+          >
+>>>>>>> f460a4ceb9a215eaa4f38c8fe2481ed0f8f0f219
         </div>
-        <div class="card">
-          <div class="card-content">
-            <h2>$58.234,360</h2>
-            <span
-              >Average Monthly <br />
-              Revenue</span
-            >
-          </div>
-          <div class="card-icon">
-            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h2>214.470</h2>
-            <span
-              >Total Transaction <br />
-              Quantity</span
-            >
-          </div>
-          <div class="card-icon">
-            <i class="fa fa-tag" aria-hidden="true"></i>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <!-- ini masih bingung -->
-            <h2>$23.185</h2>
-            <span
-              >Top Transaction <br />
-              Products</span
-            >
-          </div>
-          <div class="card-icon">
-            <i class="fa fa-usd" aria-hidden="true"></i>
-          </div>
+        <div class="card-icon">
+          <i class="fa fa-tag" aria-hidden="true"></i>
         </div>
       </div>
-
-      <!-- Chart Line and Bar Chart -->
-      <div class="charts-container">
-        <!-- Chart Line -->
-        <div class="chart">
-          <canvas id="chartSales"></canvas>
+      <div class="card">
+        <div class="card-content">
+          <!-- ini masih bingung -->
+          <h2>$23.185</h2>
+          <span
+            >Top Transaction <br />
+            Products</span
+          >
         </div>
-
-        <!-- Bar Chart -->
-        <div class="chart">
-          <canvas id="chartRevenuePerLocation"></canvas>
-        </div>
-      </div>
-
-      <!-- Filter Section -->
-      <div id="filterContainer" class="border-container">
-        <div class="filter">
-          <div class="filter-options">
-            <label for="store">Store</label>
-            <select id="store">
-              <option value="all">All</option>
-              <option value="Astoria">Astoria</option>
-              <option value="Lower Manhattan">Lower Manhattan</option>
-              <option value="Hell's Kitchen">Hell's Kitchen</option>
-            </select>
-          </div>
-
-          <div class="filter-options">
-            <label for="product">Product Category</label>
-            <select id="product">
-              <option value="all">All</option>
-              <option value="Coffe">Coffe</option>
-              <option value="Tea">Tea</option>
-              <option value="Bakery">Bakery</option>
-              <option value="Drink">Drink</option>
-            </select>
-          </div>
-
-          <div class="filter-options">
-            <label for="quantity">Transaction Quantity</label>
-            <select id="quantity">
-              <option value="all">All</option>
-              <option value="50">50</option>
-              <option value="59">59</option>
-              <option value="54">54</option>
-              <option value="38">38</option>
-              <option value="44">44</option>
-              <option value="61">61</option>
-            </select>
-          </div>
-
-          <div class="filter-options">
-            <label for="id">Product ID</label>
-            <select id="id">
-              <option value="all">All</option>
-              <option value="50">50</option>
-              <option value="59">59</option>
-              <option value="54">54</option>
-              <option value="38">38</option>
-              <option value="44">44</option>
-            </select>
-          </div>
-        </div>
-        <!-- Bar Transacted Quantity Product -->
-        <div class="chart-container2">
-          <canvas id="chartTransactionProduct"></canvas>
+        <div class="card-icon">
+          <i class="fa fa-usd" aria-hidden="true"></i>
         </div>
       </div>
     </div>
 
-    <!-- Chart Monthly Revenue -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="js/dashboard.js"></script>
-  </body>
+    <!-- Chart Line and Bar Chart -->
+    <div class="charts-container">
+      <!-- Chart Line -->
+      <div class="chart">
+        <canvas id="chartSales"></canvas>
+      </div>
+<<<<<<< HEAD
+=======
+
+      <!-- Bar Chart -->
+      <div class="chart">
+        <canvas id="chartRevenuePerLocation"></canvas>
+      </div>
+>>>>>>> f460a4ceb9a215eaa4f38c8fe2481ed0f8f0f219
+    </div>
+
+    <!-- Filter Section -->
+    
+
+  </div>
+
+  <!-- Chart Monthly Revenue -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./js/navbar.js"></script>
+  <script src="./js/dashboard.js"></script>
+  <script src="./js/sales.js"></script>
+</body>
+
 </html>

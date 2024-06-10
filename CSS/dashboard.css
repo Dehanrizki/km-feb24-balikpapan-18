@@ -7,6 +7,8 @@ body {
 
 /* Navigation */
 .navbar {
+  display: grid;
+  grid-template-columns: 50% 50%;
   position: fixed;
   top: 0;
   left: 0;
@@ -17,16 +19,22 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  transition: width 0.3s; /* add transition effect */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0, 1);
 }
 
+/* Logo */
 .logo {
   margin-bottom: 20px;
   padding: 15px;
   margin-left: 10px;
   margin-top: 30px;
   font-size: 50px;
+}
+
+/* Navigation Items */
+.navbar {
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-items {
@@ -59,6 +67,7 @@ body {
   text-decoration: none;
   color: black;
 }
+
 
 /* Dashboard */
 .content {
@@ -115,6 +124,7 @@ body {
   font-size: 40px;
   color: #f4b183;
 }
+
 /* Modal */
 
 .modal-btn {
@@ -232,6 +242,7 @@ body {
   padding: 20px;
   box-sizing: border-box;
 }
+
 .form-container form {
   display: flex;
   flex-direction: column;
@@ -273,19 +284,6 @@ body {
   background-color: #e0b580;
 }
 
-/* Style for sidebar toggle button */
-.bar-icon {
-  font-size: 24px;
-  color: #333;
-  padding: 10px;
-  border: none;
-  background: #fff;
-  cursor: pointer;
-}
-
-.bar-icon:hover {
-  background: #f0f0f0;
-}
 
 /* Style for sidebar */
 .sidebar {
@@ -308,141 +306,154 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.container {
+  border-radius: 8px;
+  background-color: #ffd966;
+  padding: 30px 30px;
+}
+
+.container .chart-container {
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 30px 20px;
+}
+
 /* Mobile portrait */
 @media only screen and (max-width: 480px) {
   .navbar {
-    width: 0;
-    overflow: hidden;
-    display: none; /* hide navbar on small screens */
+    width: 150px;
   }
-   .content {
-    margin-left: 0; /* remove margin on small screens */
-    width: 100%; /* make content full-width on small screens */
+  .content {
+    width: 100%;
   }
+
   .cards {
-     flex-wrap: wrap;
-     padding-right: 35px;
-   }
+    flex-wrap: wrap;
+    padding-right: 35px;
+  }
   .card {
-     flex: 1 1 calc(50% - 20px);
-   }
+    flex: 1 1 calc(50% - 20px);
+  }
   .charts-container {
-     flex-direction: column;
-     margin-top: 10px;
-   }
+    flex-direction: column;
+    margin-top: 10px;
+  }
   .chart {
-     width: 100%;
-     margin-top: 20px;
-     height: 12rem;
-   }
+    width: 100%;
+    margin-top: 20px;
+    height: 12rem;
+  }
   .form-container {
-     height: 50vh;
-   }
-   .chart-container2 {
+    height: 50vh;
+  }
+  .chart-container2 {
     max-width: 300px;
     margin: 10px auto;
     margin-left: 5px;
   }
+
   .filter {
     height: 10rem;
   }
- }
- 
- /* Mobile landscape */
- @media only screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+/* Mobile landscape */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .navbar {
-     width: 150px;
-   }
-  .nav-item {
-     width: 120px;
-   }
+    width: 150px;
+    
+  }
   .content {
-     margin-left: 150px;
-   }
+    width: 100%;
+  }
   .cards {
-     flex-wrap: wrap;
-   }
+    flex-wrap: wrap;
+  }
   .card {
-     flex: 1 1 calc(33% - 20px);
-   }
+    flex: 1 1 calc(33% - 20px);
+  }
   .charts-container {
-     flex-direction: column;
-   }
+    flex-direction: column;
+  }
   .chart {
-     width: 100%;
-     margin-top: 40px;
-   }
+    width: 100%;
+    margin-top: 40px;
+  }
   .form-container {
-     height: 50vh;
-   }
-   .chart-container2 {
+    height: 50vh;
+  }
+  .chart-container2 {
     max-width: 350px;
     margin: 15px auto;
   }
- }
- 
- /* Tablet portrait */
- @media only screen and (min-width: 768px) and (max-width: 834px) {
+}
+
+/* Tablet portrait */
+@media only screen and (min-width: 769px) and (max-width: 834px) {
   .navbar {
-     width: 200px;
-   }
-  .nav-item {
-     width: 160px;
-   }
+    width: 150px;
+  }
+
   .content {
-     margin-left: 200px;
-   }
+    margin-left: 160px;
+  }
   .cards {
-     flex-wrap: wrap;
-   }
+    flex-wrap: wrap;
+  }
   .card {
-     flex: 1 1 calc(25% - 20px);
-   }
+    flex: 1 1 calc(25% - 20px);
+  }
   .charts-container {
-     flex-direction: column;
-   }
+    flex-direction: column;
+  }
   .chart {
-     width: 100%;
-     margin-top: 40px;
-   }
+    width: 100%;
+    margin-top: 40px;
+  }
   .form-container {
-     height: 50vh;
-   }
-   .chart-container2 {
+    height: 50vh;
+  }
+  .chart-container2 {
     max-width: 400px;
     margin: 20px auto;
   }
- }
- 
- /* Tablet landscape */
- @media only screen and (min-width: 835px) and (max-width: 1090px) {
+}
+
+/* Tablet landscape */
+@media only screen and (min-width: 835px) and (max-width: 1090px) {
   .navbar {
-     width: 200px;
-   }
+    width: 200px;
+  }
   .nav-item {
-     width: 100px;
-   }
+    width: 100px;
+  }
   .content {
-     margin-left: 250px;
-   }
+    margin-left: 200px;
+  }
   .cards {
-     flex-wrap: wrap;
-   }
+    flex-wrap: wrap;
+  }
   .card {
-     flex: 1 1 calc(20% - 20px);
-   }
+    flex: 1 1 calc(20% - 20px);
+  }
   .charts-container {
-     flex-direction: column;
-   }
+    flex-direction: column;
+  }
   .chart {
-     width: 100%;
-     margin-top: 40px;
-   }
+    width: 100%;
+    margin-top: 40px;
+  }
   .form-container {
-     height: 50vh;
-   }
-   .chart-container2 {
+    height: 50vh;
+  }
+  .chart-container2 {
     max-width: 450px;
     margin: 25px auto;
   }
- }
+}

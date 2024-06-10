@@ -250,22 +250,18 @@ ion-icon {
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: #D29C75;
-    color: white;
-    text-align: center;
-    flex-direction: column; 
-  }
-  
-  .footer h2 {
-    line-height: 4px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #d29c75;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+}
 
+<<<<<<< HEAD
   @media screen and (max-width: 480px) {
     body {
       overflow-x: hidden;
@@ -352,47 +348,141 @@ ion-icon {
       margin-top: 45px;
       height: 5rem;
     }
+=======
+.footer h2 {
+  line-height: 4px;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+>>>>>>> f460a4ceb9a215eaa4f38c8fe2481ed0f8f0f219
   }
-  
-  @media screen and (max-width: 320px) {
-    body {
-      overflow: hidden;
-    }
-  
-    .container2 img {
-      display: flex;
-      justify-content: right;
-      flex-direction: row;
-    }
+  nav a {
+    font-size: 14.5px;
+    margin-left: 3.6px;
+    margin-right: 20px;
   }
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
+  .container {
+    margin-left: 15px;
+    height: 12rem;
   }
-  /* Tablet landscape */
-  @media screen and (max-width: 1024px) {
-    /* Adjustments for tablet landscape view */
-    .container {
-      padding-top: 100px; /* To accommodate the fixed nav bar */
-    }
-    nav a {
-      margin: 10px;
-    }
-    .welcome h1 {
-      font-size: 55px;
-    }
-    .coffee {
-      margin-top: 50px;
-      margin-left: 15px;
-      text-align: center;
-    }
-    .coffee img {
-      margin-top: 20px;
-      width: 170px;
-      height: 170px;
-    }
-    .container2 img {
-      margin: 0 auto;
-    }
+  .container h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
   }
+  .welcome h1 {
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  .button {
+    margin-top: 5rem;
+  }
+  .coffee {
+    margin-left: 15px;
+  }
+  .coffee img {
+    width: 170px;
+    height: 200px;
+  }
+  .container h2 {
+    margin-top: 5px;
+  }
+  .container2 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container2 img {
+    width: 20rem;
+    height: 12rem;
+    margin-left: 0;
+  }
+  .container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    height: 21rem;
+    margin-top: 15rem;
+  }
+  .container3 #benefit {
+    margin-left: 38px;
+    margin-top: 15px;
+  }
+  .container3 h3 {
+    margin-left: 38px;
+    margin-top: 0px;
+  }
+  .benefit-list {
+    margin-top: 32px;
+    margin-left: 15px;
+  }
+  .contact-wrap {
+    height: 18rem;
+  }
+  .contact-us .email {
+    margin-top: 3.8rem;
+  }
+  .email-icon {
+    margin-top: 3rem;
+  }
+  .ig-icon {
+    margin-top: 2.5rem;
+  }
+  .contact-us .ig {
+    margin-top: 3.5rem;
+  }
+  .contact-us .contact-tagline2 {
+    margin-top: 2px;
+    color: white;
+    line-height: 1.8rem;
+  }
+  .footer {
+    margin-top: 45px;
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    overflow: hidden;
+  }
+
+  .container2 img {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+/* Tablet landscape */
+@media screen and (max-width: 1024px) {
+  /* Adjustments for tablet landscape view */
+  .container {
+    padding-top: 100px; /* To accommodate the fixed nav bar */
+  }
+  nav a {
+    margin: 10px;
+  }
+  .welcome h1 {
+    font-size: 55px;
+  }
+  .coffee {
+    margin-top: 50px;
+    margin-left: 15px;
+    text-align: center;
+  }
+  .coffee img {
+    margin-top: 20px;
+    width: 170px;
+    height: 170px;
+  }
+  .container2 img {
+    margin: 0 auto;
+  }
+}

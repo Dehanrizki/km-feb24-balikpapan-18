@@ -1,94 +1,188 @@
 body {
-    margin: 0;
-    font-family: 'poppins';
-    font-size: 13px;
-  }
-  /* Navigation */
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+
+/* Navigation */
+.navbar {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #f3c796;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0, 1);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+/* Logo */
+.logo {
+  margin-bottom: 20px;
+  padding: 15px;
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 50px;
+}
+
+/* Navigation Items */
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  border-radius: 20px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  margin: 5px 0;
+  color: black;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-item i {
+  margin-right: 12px;
+  font-size: 16px;
+}
+
+.nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Content */
+.content {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* DataTable styling */
+table.dataTable {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table.dataTable thead th,
+table.dataTable tfoot th {
+  padding: 10px;
+}
+
+table.dataTable tbody td {
+  padding: 10px;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+  float: right;
+  margin-top: 10px;
+}
+
+.dataTables_wrapper .dataTables_filter {
+  float: right;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 480px) {
   .navbar {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    width: 150px;
+  }
+  .content {
+    width: 100%;
+  }
+  .table-container {
+      overflow-x: auto;
+  }
+  table.dataTable {
+      font-size: 12px;
+  }
+}
+
+/* Mobile Landscape (<= 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    width: 150px;
+  }
+  .content {
+    width: 100%;
+  }
+  .table-container {
+      overflow-x: auto;
+  }
+  table.dataTable {
+      font-size: 14px;
+  }
+}
+
+/* Tablet Portrait (<= 834px) */
+@media only screen and (min-width: 769px) and (max-width: 834px) {
+  .navbar {
+    width: 150px;
+    
+  }
+  .content {
+      margin-left: 160px;
+      padding: 20px;
+  }
+  .table-container {
+      overflow-x: auto;
+  }
+  table.dataTable {
+      font-size: 16px;
+  }
+}
+
+/* Tablet Landscape (<= 1090px) */
+@media only screen and (min-width: 835px) and (max-width: 1090px) {
+  .navbar {
     width: 200px;
     height: 100%;
-    background-color: #f3c796;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0, 1);
+    justify-content: flex-start;
   }
-  
-  /* Logo */
   .logo {
-    margin-bottom: 20px;
-    padding: 15px;
-    margin-left: 10px;
-    margin-top: 30px;
-    font-size: 50px;
+      font-size: 50px;
   }
-  
-  /* Navigation Items */
-  .navbar {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .nav-items {
-    display: flex;
-    flex-direction: column;
-  }
-  
   .nav-item {
-    border-radius: 20px;
     width: 100px;
-    display: flex;
-    align-items: center;
     padding: 15px 20px;
-    margin: 5px 0;
-    color: black;
-    cursor: pointer;
-    transition: background 0.3s;
   }
-  
-  .nav-item i {
-    margin-right: 12px;
-    font-size: 16px;
-  }
-  
-  .nav-item:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-item a {
-    text-decoration: none;
-    color: black;
-  }
-  /* Dashboard */
   .content {
-    margin-left: 200px;
-    padding: 20px;
+      margin-left: 200px;
+      padding: 20px;
   }
-  
-  /* Scorecard */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+  .table-container {
+      overflow-x: auto;
   }
-  
-  .bar-icon {
-    position: absolute;
-    color: #f3c796;
-    right: 0;
-    top: 0;
-    padding: 15px;
-    margin-top: 40px;
-    margin-right: 20px;
-    font-size: 30px;
+  table.dataTable {
+      font-size: 18px;
   }
+<<<<<<< HEAD
   
   /* Score Card */
   .cards {
@@ -349,3 +443,6 @@ body {
       width: 50%;
     }
   }
+=======
+}
+>>>>>>> f460a4ceb9a215eaa4f38c8fe2481ed0f8f0f219
