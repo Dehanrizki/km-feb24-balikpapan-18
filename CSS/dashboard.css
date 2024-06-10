@@ -7,6 +7,8 @@ body {
 
 /* Navigation */
 .navbar {
+  display: grid;
+  grid-template-columns: 50% 50%;
   position: fixed;
   top: 0;
   left: 0;
@@ -17,17 +19,22 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  transition: width 0.3s;
-  /* add transition effect */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0, 1);
 }
 
+/* Logo */
 .logo {
   margin-bottom: 20px;
   padding: 15px;
   margin-left: 10px;
   margin-top: 30px;
   font-size: 50px;
+}
+
+/* Navigation Items */
+.navbar {
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-items {
@@ -375,13 +382,14 @@ body {
 /* Mobile landscape */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .navbar {
-    width: 150px;
-  }
-  .nav-item {
-    width: 120px;
+    width: 0;
+    overflow: hidden;
+    display: none;
+    /* hide navbar on small screens */
   }
   .content {
-    margin-left: 150px;
+    margin-left: 0; /* remove margin on small screens */
+    width: 100%;
   }
   .cards {
     flex-wrap: wrap;
@@ -406,15 +414,13 @@ body {
 }
 
 /* Tablet portrait */
-@media only screen and (min-width: 768px) and (max-width: 834px) {
+@media only screen and (min-width: 769px) and (max-width: 834px) {
   .navbar {
-    width: 200px;
+    width: 150px;
   }
-  .nav-item {
-    width: 160px;
-  }
+
   .content {
-    margin-left: 200px;
+    margin-left: 160px;
   }
   .cards {
     flex-wrap: wrap;

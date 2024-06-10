@@ -110,3 +110,10 @@ body {
 .form-container form button:hover {
   background-color: #e0b580;
 }
+@media only screen and (max-width: 834px) {
+  .navbar {
+    width: 0;
+    overflow: hidden;
+    display: none;
+  }
+}

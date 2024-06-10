@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  font-family: "poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 13px;
 }
+
 /* Navigation */
 .navbar {
   display: grid;
@@ -65,276 +66,121 @@ body {
   text-decoration: none;
   color: black;
 }
-/* Dashboard */
+
+/* Content */
 .content {
   margin-left: 200px;
   padding: 20px;
 }
 
-/* Scorecard */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.bar-icon {
-  position: absolute;
-  color: #f3c796;
-  right: 0;
-  top: 0;
-  padding: 15px;
-  margin-top: 40px;
-  margin-right: 20px;
-  font-size: 30px;
-}
-
-/* Score Card */
-.cards {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  flex: 1;
-  background-color: #d3d3d3;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0, 1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  flex: 1 1 21%;
-  min-width: 50px;
-  max-width: calc(25% - 20px);
-  box-sizing: border-box;
-  transition: transform 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card-content h2 {
-  margin: 0;
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.card-content span {
-  margin: 5px 0 0;
-  color: #333;
-  line-height: 1;
-}
-
-.card-icon {
-  font-size: 40px;
-  color: #f4b183;
-}
-
-@media (max-width: 100px) {
-  .card {
-    flex: 1 1 45%;
-  }
-}
-
-@media (max-width: 7px) {
-  .card {
-    flex: 1 1 100%;
-  }
-}
-
-/* Chart */
-canvas {
+.table-container {
   width: 100%;
-  padding: auto;
+  overflow-x: auto;
 }
 
-.content-chart {
-  border: 1px solid grey;
-  border-radius: 2px;
-  position: absolute;
-  color: #f3c796;
-  right: 0;
-  top: 0;
-  padding: 20px 0;
-  margin-top: 322px;
-  margin-left: 50px;
-  margin-right: 25px;
-  margin-bottom: 500px;
-  font-size: 500px;
+/* DataTable styling */
+table.dataTable {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
 }
 
-#chartRevenuePerLocation {
-  margin: 33px;
-  margin-bottom: 30px;
-  margin-right: 35px;
-}
-.border-container {
-  grid-template-columns: 80% 1fr;
-  border: 1px solid grey;
-  border-radius: 2px;
+table.dataTable thead th,
+table.dataTable tfoot th {
   padding: 10px;
-  margin: 10px;
-  margin-top: 50px;
 }
 
-/* feedback */
-.feedback {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0, 1);
-  opacity: 0;
-  transition: opacity 0.3s;
+table.dataTable tbody td {
+  padding: 10px;
 }
 
-.feedback.show {
-  opacity: 1;
-}
-
-/* Modal */
-
-.modal-btn {
-  display: inline-block;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-top: 0;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  right: 20px;
-  top: 0;
-  width: 100px;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0, 4);
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 10% auto;
-  padding: 40px;
-  border: 1px solid #888;
-  width: 100px;
-}
-
-.close {
-  color: #aaa;
+.dataTables_wrapper .dataTables_paginate {
   float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Container for filters */
-#filterContainer {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: #ffd966;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-#filterContainer label {
   margin-top: 10px;
-  margin-bottom: 5px;
 }
 
-#filterContainer select {
+.dataTables_wrapper .dataTables_filter {
+  float: right;
   margin-bottom: 10px;
-  padding: 5px;
-  font-size: 16px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+}
+@media only screen and (max-width: 480px) {
+  .navbar {
+    width: 0;
+    overflow: hidden;
+    display: none;
+  }
+  .content {
+      margin: 0;
+      padding: 10px;
+  }
+  .table-container {
+      overflow-x: auto;
+  }
+  table.dataTable {
+      font-size: 12px;
+  }
 }
 
-.product-chart {
-  border: 1px solid grey;
-  border-radius: 2px;
-  position: absolute;
-  color: #f3c796;
-  right: 0;
-  top: 0;
-  padding: 25px 0;
-  margin-top: 650px;
-  margin-left: 100px;
-  margin-right: 250px;
-  font-size: 250px;
+/* Mobile Landscape (<= 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    width: 0;
+    overflow: hidden;
+    display: none;
+  }
+  .content {
+      margin: 0;
+      padding: 10px;
+  }
+  .table-container {
+      overflow-x: auto;
+  }
+  table.dataTable {
+      font-size: 14px;
+  }
 }
 
-/* Form Container */
-.form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 70vh; /* Full viewport height to center vertically */
-  background-color: #ffffff;
-  padding: 20px;
-  box-sizing: border-box;
+/* Tablet Portrait (<= 834px) */
+@media only screen and (min-width: 769px) and (max-width: 834px) {
+  .navbar {
+    width: 150px;
+    
+  }
+  .content {
+      margin-left: 160px;
+      padding: 20px;
+  }
+  .table-container {
+      overflow-x: auto;
+  }
+  table.dataTable {
+      font-size: 16px;
+  }
 }
 
-.form-container form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 400px; /* Maximum width for the form */
-  background-color: white;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for the form */
-  border-radius: 8px;
-}
-
-.form-container form label {
-  margin-top: 10px;
-  width: 100%;
-  text-align: left;
-}
-
-.form-container form input,
-.form-container form textarea,
-.form-container form button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box; /* Ensure padding does not affect width */
-}
-
-.form-container form button {
-  background-color: #f3c796;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.form-container form button:hover {
-  background-color: #e0b580; /* Slightly darker on hover */
+/* Tablet Landscape (<= 1090px) */
+@media only screen and (min-width: 835px) and (max-width: 1090px) {
+  .navbar {
+    width: 200px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .logo {
+      font-size: 50px;
+  }
+  .nav-item {
+    width: 100px;
+    padding: 15px 20px;
+  }
+  .content {
+      margin-left: 200px;
+      padding: 20px;
+  }
+  .table-container {
+      overflow-x: auto;
+  }
+  table.dataTable {
+      font-size: 18px;
+  }
 }
