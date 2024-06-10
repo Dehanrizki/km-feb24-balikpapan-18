@@ -1,156 +1,84 @@
 body {
-    margin: 0;
-    font-family: 'poppins';
-    font-size: 13px;
-  }
-  /* Navigation */
-  .navbar {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #f3c796;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0, 1);
-  }
-  
-  /* Logo */
-  .logo {
-    margin-bottom: 20px;
-    padding: 15px;
-    margin-left: 10px;
-    margin-top: 30px;
-    font-size: 50px;
-  }
-  
-  /* Navigation Items */
-  .navbar {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .nav-items {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .nav-item {
-    border-radius: 20px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    padding: 15px 20px;
-    margin: 5px 0;
-    color: black;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .nav-item i {
-    margin-right: 12px;
-    font-size: 16px;
-  }
-  
-  .nav-item:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-item a {
-    text-decoration: none;
-    color: black;
-  }
+  margin: 0;
+  font-family: 'poppins';
+  font-size: 13px;
+}
 
-  /* Dashboard */
-  .content {
-    margin-left: 235px;
-    padding: 20px;
-    font-size: 20px;
-  }
+/* Navigation */
+.navbar {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #f3c796;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0, 1);
+}
 
-  /* Canvas */
-  canvas {
-    width: 100%;
-    padding: auto;
-  }
+/* Logo */
+.logo {
+  margin-bottom: 20px;
+  padding: 15px;
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 50px;
+}
 
-  /* Chart Best Selling Product */
-  #best-selling {
-    border: 1px solid grey;
-    border-radius: 2px;
-    position: absolute;
-    color: #f3c796;
-    right: 0;
-    top: 0;
-    padding: 20px 0;
-    margin-top: 150px;
-    margin-left: 50px;
-    margin-right: 590px;
-    margin-bottom: 500px;
-    font-size: 500px;
-  }
+/* Navigation Items */
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
 
-  /* Chart Total Sales By Location */
-  #sales-location {
-    border: 1px solid grey;
-    border-radius: 2px;
-    position: absolute;
-    color: #f3c796;
-    right: 0;
-    top: 0;
-    padding: 25px 0;
-    margin-top: 150px;
-    margin-left: 100px;
-    margin-right: 25px;
-    font-size: 500px;
-  }
+.nav-items {
+  display: flex;
+  flex-direction: column;
+}
 
-  /* Chart Total Sales By Location */
-  #quantity-location {
-    border: 1px solid grey;
-    border-radius: 2px;
-    position: absolute;
-    color: #f3c796;
-    right: 0;
-    top: 0;
-    padding: 25px 0;
-    margin-top: 500px;
-    margin-left: 100px;
-    margin-right: 590px;
-    font-size: 500px;
-  }
-  
-  /* Chart Revenue Of Product Category Per Store */
-  #revenue-product {
-    border: 1px solid grey;
-    border-radius: 2px;
-    position: absolute;
-    color: #f3c796;
-    right: 0;
-    top: 0;
-    padding: 25px 0;
-    margin-top: 500px;
-    margin-left: 100px;
-    margin-right: 25px;
-    font-size: 500px;
-  }
+.nav-item {
+  border-radius: 20px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  margin: 5px 0;
+  color: black;
+  cursor: pointer;
+  transition: background 0.3s;
+}
 
-  /* Chart Top 1 Transaction Product in Each Store*/
-  #top-one {
-    border: 1px solid grey;
-    border-radius: 2px;
-    position: absolute;
-    color: #f3c796;
-    right: 0;
-    top: 0;
-    padding: 25px 0;
-    margin-top: 880px;
-    margin-left: 100px;
-    margin-right: 350px;
-    font-size: 500px;
-  }
+.nav-item i {
+  margin-right: 12px;
+  font-size: 16px;
+}
+
+.nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Dashboard */
+.content {
+  margin-left: 235px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.container {
+  width: 70%;
+  margin-left: 250px;
+}
+
+.chart-container {
+  margin-bottom: 50px;
+}
