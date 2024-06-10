@@ -68,6 +68,7 @@ body {
   color: black;
 }
 
+
 /* Dashboard */
 .content {
   margin-left: 200px;
@@ -283,19 +284,6 @@ body {
   background-color: #e0b580;
 }
 
-/* Style for sidebar toggle button */
-.bar-icon {
-  font-size: 24px;
-  color: #333;
-  padding: 10px;
-  border: none;
-  background: #fff;
-  cursor: pointer;
-}
-
-.bar-icon:hover {
-  background: #f0f0f0;
-}
 
 /* Style for sidebar */
 .sidebar {
@@ -339,14 +327,10 @@ body {
 /* Mobile portrait */
 @media only screen and (max-width: 480px) {
   .navbar {
-    width: 0;
-    overflow: hidden;
-    display: none;
-    /* hide navbar on small screens */
+    width: 150px;
   }
   .content {
-    margin-left: 0; /* remove margin on small screens */
-    width: 100%; /* make content full-width on small screens */
+    width: 100%;
   }
 
   .cards {
@@ -382,13 +366,10 @@ body {
 /* Mobile landscape */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .navbar {
-    width: 0;
-    overflow: hidden;
-    display: none;
-    /* hide navbar on small screens */
+    width: 150px;
+    
   }
   .content {
-    margin-left: 0; /* remove margin on small screens */
     width: 100%;
   }
   .cards {
@@ -453,7 +434,7 @@ body {
     width: 100px;
   }
   .content {
-    margin-left: 250px;
+    margin-left: 200px;
   }
   .cards {
     flex-wrap: wrap;

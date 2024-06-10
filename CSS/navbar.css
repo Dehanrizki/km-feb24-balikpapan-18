@@ -1,0 +1,49 @@
+.transition {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar.hidden {
+    width: 0px;
+  }
+  
+  .nav-item.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  
+  .nav-item.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .logo.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  
+  .logo.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .content.hidden {
+    margin-left: 0; /* Adjust margin when navbar is hidden */
+  }
+  
+  /* Dashboard */
+  .content {
+    transition: margin-left 0.3s ease-in-out;
+  }
+  /* Style for sidebar toggle button */
+.bar-icon {
+    font-size: 24px;
+    color: #333;
+    padding: 10px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  .bar-icon:hover {
+    background: #f0f0f0;
+  }

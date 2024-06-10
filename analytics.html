@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="CSS/analytics.css" />
+    <link rel="stylesheet" href="./CSS/navbar.css" />
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -44,7 +45,12 @@
     <!-- Content -->
     <div class="content">
         <!-- Analytics -->
+        <div class="header">
         <h1>Transaction</h1>
+        <div class="bar-icon">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+      </div>
         <div class="table-container">
             <table id="transactionTable" class="display" style="width:100%">
                 <thead>
@@ -81,5 +87,6 @@
             </table>
         </div>
     </div>
+    <script src="./js/navbar.js"></script>
 </body>
 </html>

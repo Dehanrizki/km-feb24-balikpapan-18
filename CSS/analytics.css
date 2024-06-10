@@ -20,7 +20,12 @@ body {
   padding-top: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0, 1);
 }
-
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
 /* Logo */
 .logo {
   margin-bottom: 20px;
@@ -105,13 +110,10 @@ table.dataTable tbody td {
 }
 @media only screen and (max-width: 480px) {
   .navbar {
-    width: 0;
-    overflow: hidden;
-    display: none;
+    width: 150px;
   }
   .content {
-      margin: 0;
-      padding: 10px;
+    width: 100%;
   }
   .table-container {
       overflow-x: auto;
@@ -124,13 +126,10 @@ table.dataTable tbody td {
 /* Mobile Landscape (<= 768px) */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .navbar {
-    width: 0;
-    overflow: hidden;
-    display: none;
+    width: 150px;
   }
   .content {
-      margin: 0;
-      padding: 10px;
+    width: 100%;
   }
   .table-container {
       overflow-x: auto;
