@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="./CSS/sales.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@200;300;400&display=swap"
-      rel="stylesheet"/>
-
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -46,47 +47,46 @@
 
     <div class="container">
       <div class="filters">
-          <select id="storeFilter">
-              <option value="All">All Stores</option>
-              <option value="Lower Manhattan">Lower Manhattan</option>
-              <option value="Hell's Kitchen">Hell's Kitchen</option>
-              <option value="Astoria">Astoria</option>
-          </select>
-          <select id="monthFilter">
-              <option value="All">All Months</option>
-              <option value="Januari">Januari</option>
-              <option value="Februari">Februari</option>
-              <option value="Maret">Maret</option>
-              <option value="April">April</option>
-              <option value="Mei">Mei</option>
-              <option value="Juni">Juni</option>
-          </select>
-          <button onclick="updateDashboard()">Update</button>
+        <select id="storeFilter">
+          <option value="All">All Stores</option>
+          <option value="Lower Manhattan">Lower Manhattan</option>
+          <option value="Hell's Kitchen">Hell's Kitchen</option>
+          <option value="Astoria">Astoria</option>
+        </select>
+        <select id="monthFilter">
+          <option value="All">All Months</option>
+          <option value="Januari">Januari</option>
+          <option value="Februari">Februari</option>
+          <option value="Maret">Maret</option>
+          <option value="April">April</option>
+          <option value="Mei">Mei</option>
+          <option value="Juni">Juni</option>
+        </select>
+        <button onclick="updateDashboard()">Update</button>
       </div>
 
       <div class="chart-container">
-          <canvas id="topTransactionsChart"></canvas>
+        <canvas id="topTransactionsChart"></canvas>
       </div>
       <div class="chart-container">
-          <canvas id="topSellingChart"></canvas>
+        <canvas id="topSellingChart"></canvas>
       </div>
       <div class="chart-container">
-          <canvas id="revenuePerLocationChart"></canvas>
+        <canvas id="revenuePerLocationChart"></canvas>
       </div>
       <div class="chart-container">
-          <canvas id="monthlyRevenueChart"></canvas>
+        <canvas id="monthlyRevenueChart"></canvas>
       </div>
       <div class="chart-container">
-          <canvas id="transactionsCategoryChart"></canvas>
+        <canvas id="transactionsCategoryChart"></canvas>
       </div>
       <div class="chart-container">
-          <canvas id="revenueCategoryChart"></canvas>
+        <canvas id="revenueCategoryChart"></canvas>
       </div>
       <div class="chart-container">
-          <canvas id="totalSalesChart"></canvas>
+        <canvas id="totalSalesChart"></canvas>
       </div>
-  </div>
-
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/sales.js"></script>

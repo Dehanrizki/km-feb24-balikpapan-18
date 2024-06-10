@@ -69,7 +69,17 @@ const chartTransactionProduct = document.getElementById(
 new Chart(chartTransactionProduct, {
   type: "bar",
   data: {
-    labels: ["Bakery", "Branded", "Coffee", "Coffee Beans", "Drinking Chocolate", "Flavours", "Loose Tea", "Package Chocolate", "Tea"],
+    labels: [
+      "Bakery",
+      "Branded",
+      "Coffee",
+      "Coffee Beans",
+      "Drinking Chocolate",
+      "Flavours",
+      "Loose Tea",
+      "Package Chocolate",
+      "Tea",
+    ],
     datasets: [
       {
         data: [23214, 776, 89250, 1828, 17457, 10511, 1210, 487, 69737],
@@ -80,4 +90,3 @@ new Chart(chartTransactionProduct, {
     ],
   },
 });
-
