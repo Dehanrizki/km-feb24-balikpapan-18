@@ -338,3 +338,14 @@ body {
   .form-container form button:hover {
     background-color: #e0b580; /* Slightly darker on hover */
   }
+  @media screen and (max-width: 480px) {
+    .navbar {
+      width: 0;
+      display: none;
+      overflow: hidden;
+    }
+   #transactionTable {
+      margin-left: 0;
+      width: 50%;
+    }
+  }
