@@ -68,7 +68,6 @@ body {
   color: black;
 }
 
-
 /* Dashboard */
 .content {
   margin-left: 200px;
@@ -284,7 +283,6 @@ body {
   background-color: #e0b580;
 }
 
-
 /* Style for sidebar */
 .sidebar {
   background: #333;
@@ -367,7 +365,6 @@ body {
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .navbar {
     width: 150px;
-    
   }
   .content {
     width: 100%;

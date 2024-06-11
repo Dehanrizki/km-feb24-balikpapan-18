@@ -116,10 +116,10 @@ table.dataTable tbody td {
     width: 100%;
   }
   .table-container {
-      overflow-x: auto;
+    overflow-x: auto;
   }
   table.dataTable {
-      font-size: 12px;
+    font-size: 12px;
   }
 }
 
@@ -132,10 +132,10 @@ table.dataTable tbody td {
     width: 100%;
   }
   .table-container {
-      overflow-x: auto;
+    overflow-x: auto;
   }
   table.dataTable {
-      font-size: 14px;
+    font-size: 14px;
   }
 }
 
@@ -143,17 +143,16 @@ table.dataTable tbody td {
 @media only screen and (min-width: 769px) and (max-width: 834px) {
   .navbar {
     width: 150px;
-    
   }
   .content {
-      margin-left: 160px;
-      padding: 20px;
+    margin-left: 160px;
+    padding: 20px;
   }
   .table-container {
-      overflow-x: auto;
+    overflow-x: auto;
   }
   table.dataTable {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
 
@@ -166,31 +165,30 @@ table.dataTable tbody td {
     justify-content: flex-start;
   }
   .logo {
-      font-size: 50px;
+    font-size: 50px;
   }
   .nav-item {
     width: 100px;
     padding: 15px 20px;
   }
   .content {
-      margin-left: 200px;
-      padding: 20px;
+    margin-left: 200px;
+    padding: 20px;
   }
   .table-container {
-      overflow-x: auto;
+    overflow-x: auto;
   }
   table.dataTable {
-      font-size: 18px;
+    font-size: 18px;
   }
-<<<<<<< HEAD
-  
+
   /* Score Card */
   .cards {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
   }
-  
+
   .card {
     flex: 1;
     background-color: #d3d3d3;
@@ -206,47 +204,47 @@ table.dataTable tbody td {
     box-sizing: border-box;
     transition: transform 0.2s;
   }
-  
+
   .card:hover {
     transform: translateY(-5px);
   }
-  
+
   .card-content h2 {
     margin: 0;
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
   }
-  
+
   .card-content span {
     margin: 5px 0 0;
     color: #333;
     line-height: 1;
   }
-  
+
   .card-icon {
     font-size: 40px;
     color: #f4b183;
   }
-  
+
   @media (max-width: 100px) {
     .card {
       flex: 1 1 45%;
     }
   }
-  
+
   @media (max-width: 7px) {
     .card {
       flex: 1 1 100%;
     }
   }
-  
+
   /* Chart */
   canvas {
     width: 100%;
     padding: auto;
   }
-  
+
   .content-chart {
     border: 1px solid grey;
     border-radius: 2px;
@@ -261,7 +259,7 @@ table.dataTable tbody td {
     margin-bottom: 500px;
     font-size: 500px;
   }
-  
+
   #chartRevenuePerLocation {
     margin: 33px;
     margin-bottom: 30px;
@@ -275,7 +273,7 @@ table.dataTable tbody td {
     margin: 10px;
     margin-top: 50px;
   }
-  
+
   /* feedback */
   .feedback {
     position: fixed;
@@ -287,13 +285,13 @@ table.dataTable tbody td {
     opacity: 0;
     transition: opacity 0.3s;
   }
-  
+
   .feedback.show {
     opacity: 1;
   }
-  
+
   /* Modal */
-  
+
   .modal-btn {
     display: inline-block;
     right: 20px;
@@ -305,7 +303,7 @@ table.dataTable tbody td {
     border: none;
     cursor: pointer;
   }
-  
+
   .modal {
     display: none;
     position: fixed;
@@ -317,7 +315,7 @@ table.dataTable tbody td {
     height: 100px;
     background-color: rgba(0, 0, 0, 0, 4);
   }
-  
+
   .modal-content {
     background-color: #fefefe;
     margin: 10% auto;
@@ -325,21 +323,21 @@ table.dataTable tbody td {
     border: 1px solid #888;
     width: 100px;
   }
-  
+
   .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
-  
+
   .close:hover,
   .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
-  
+
   /* Container for filters */
   #filterContainer {
     margin-top: 20px;
@@ -350,12 +348,12 @@ table.dataTable tbody td {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   #filterContainer label {
     margin-top: 10px;
     margin-bottom: 5px;
   }
-  
+
   #filterContainer select {
     margin-bottom: 10px;
     padding: 5px;
@@ -364,7 +362,7 @@ table.dataTable tbody td {
     border: 1px solid #ccc;
     border-radius: 3px;
   }
-  
+
   .product-chart {
     border: 1px solid grey;
     border-radius: 2px;
@@ -378,7 +376,7 @@ table.dataTable tbody td {
     margin-right: 250px;
     font-size: 250px;
   }
-  
+
   /* Form Container */
   .form-container {
     display: flex;
@@ -389,9 +387,9 @@ table.dataTable tbody td {
     height: 70vh; /* Full viewport height to center vertically */
     background-color: #ffffff;
     padding: 20px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
   }
-  
+
   .form-container form {
     display: flex;
     flex-direction: column;
@@ -403,13 +401,13 @@ table.dataTable tbody td {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for the form */
     border-radius: 8px;
   }
-  
+
   .form-container form label {
     margin-top: 10px;
     width: 100%;
     text-align: left;
   }
-  
+
   .form-container form input,
   .form-container form textarea,
   .form-container form button {
@@ -420,7 +418,7 @@ table.dataTable tbody td {
     border-radius: 4px;
     box-sizing: border-box; /* Ensure padding does not affect width */
   }
-  
+
   .form-container form button {
     background-color: #f3c796;
     color: white;
@@ -428,7 +426,7 @@ table.dataTable tbody td {
     cursor: pointer;
     margin-top: 20px;
   }
-  
+
   .form-container form button:hover {
     background-color: #e0b580; /* Slightly darker on hover */
   }
@@ -438,11 +436,9 @@ table.dataTable tbody td {
       display: none;
       overflow: hidden;
     }
-   #transactionTable {
+    #transactionTable {
       margin-left: 0;
       width: 50%;
     }
   }
-=======
 }
->>>>>>> f460a4ceb9a215eaa4f38c8fe2481ed0f8f0f219
