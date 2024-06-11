@@ -323,7 +323,7 @@ body {
 }
 
 /* Mobile portrait */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 400px) {
   .navbar {
     width: 150px;
   }
@@ -373,7 +373,7 @@ body {
     flex-wrap: wrap;
   }
   .card {
-    flex: 1 1 calc(33% - 20px);
+    flex: 1 1 calc(50% - 20px);
   }
   .charts-container {
     flex-direction: column;
@@ -404,7 +404,7 @@ body {
     flex-wrap: wrap;
   }
   .card {
-    flex: 1 1 calc(25% - 20px);
+    flex: 1 1 calc(50% - 20px);
   }
   .charts-container {
     flex-direction: column;
