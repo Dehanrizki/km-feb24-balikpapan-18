@@ -1138,7 +1138,7 @@ function updateDashboard() {
     "bar",
     selectedData.topTransactions.labels,
     selectedData.topTransactions.data,
-    "Top 5 Transactions"
+    "Top Transactions Product"
   );
 
   if (topSellingChart) topSellingChart.destroy();
@@ -1147,7 +1147,7 @@ function updateDashboard() {
     "bar",
     selectedData.topSelling.labels,
     selectedData.topSelling.data,
-    "Top 5 Best Selling"
+    "Top Best Selling Product"
   );
 
   if (revenuePerLocationChart) revenuePerLocationChart.destroy();
