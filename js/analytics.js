@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Load the JSON data
-  $.getJSON("transaction.json", function (data) {
+  $.getJSON("data/transaction.json", function (data) {
     // Initialize DataTables
     $("#transactionTable").DataTable({
       data: data,
@@ -27,7 +27,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $.getJSON("product.json", function (data) {
+  $.getJSON("data/product.json", function (data) {
     var tableData = [];
     $.each(data, function (index, item) {
       tableData.push([
