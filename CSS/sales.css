@@ -74,7 +74,8 @@ body {
 }
 
 .container {
-  width: 70%;
+  width: 100%;
+  
 }
 
 .chart-container {
@@ -82,10 +83,90 @@ body {
   width: 100%;
   height: 300px;
 }
+
 .chart-container canvas {
-  max-width: 100%;
+  max-width: 50% ;
   max-height: 100%;
 }
+
+.chart-container2 {
+  position: relative;
+  bottom: 350px;
+  left: 600px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 300px;
+}
+
+.chart-container2 canvas {
+  max-width: 45% ;
+  max-height: 100%;
+}
+
+.chart-container3 {
+  position: relative;
+  bottom: 300px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 300px;
+}
+
+.chart-container3 canvas {
+  max-width: 45% ;
+  max-height: 100%;
+}
+
+.chart-container4 {
+  position: relative;
+  bottom: 650px;
+  left: 600px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 300px;
+}
+
+.chart-container4 canvas {
+  max-width: 45% ;
+  max-height: 100%;
+}
+
+.chart-container5 {
+  position: relative;
+  bottom: 650px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 300px;
+}
+
+.chart-container5 canvas {
+  max-width: 45% ;
+  max-height: 100%;
+}
+
+.chart-container6 {
+  position: relative;
+  bottom: 1000px;
+  left: 580px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 300px;
+}
+
+.chart-container6 canvas {
+  max-width: 45% ;
+  max-height: 100%;
+}
+
+.chart-container7 {
+  position: relative;
+  bottom: 1000px;
+  left: 250px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 300px;
+}
+
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -110,12 +191,19 @@ body {
     width: 90%;
     height: 90%;
   }
+  .chart-container2 {
+    width: 90%;
+    height: 90%;
+    left: 200px;
+    bottom: 180px;
+  }
 }
 
 /* Mobile landscape: <= 768px */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .navbar {
     width: 150px;
+    
   }
   .content {
     width: 100%;
@@ -128,12 +216,16 @@ body {
   .chart-container {
     width: 95%;
   }
+  .chart-container {
+    width: 95%;
+  }
 }
 
 /* Tablet portrait: <= 834px */
 @media only screen and (min-width: 769px) and (max-width: 834px) {
   .navbar {
     width: 150px;
+    
   }
 
   .content {
@@ -143,11 +235,13 @@ body {
 
   .container {
     width: calc(100% - 210px);
+
   }
 
   .chart-container {
     width: 100%;
   }
+
 }
 
 /* Tablet landscape: <= 1090px */
@@ -182,3 +276,5 @@ body {
     width: 100%;
   }
 }
+
+
