@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "poppins";
+  font-family: montserrat, sans-serif;
   font-size: 13px;
 }
 
@@ -79,13 +79,13 @@ body {
   
 }
 
-.chart-container {
+.chart-container1 {
   margin-bottom: 50px;
   width: 100%;
   height: 300px;
 }
 
-.chart-container canvas {
+.chart-container1 canvas {
   max-width: 50% ;
   max-height: 100%;
 }
@@ -176,29 +176,81 @@ body {
 }
 /* Responsive styles */
 /* Mobile portrait: <= 480px */
-@media (max-width: 480px) {
+  @media (max-width: 480px) {
+  /* Navigation Bar */
   .navbar {
-    width: 150px;
-  }
-  .content {
     width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    background-color: #f3c796; 
   }
 
-  .container {
+  .logo {
+    display: none; /* Sembunyikan logo pada mobile */
+  }
+
+  .nav-item {
+    width: 20%;
+    padding: 0;
+    margin: 5px 0;
+    justify-content: center;
+  }
+
+  .nav-item i {
+    margin-right: 0;
+    font-size: 24px; 
+  }
+
+  .nav-item span {
+    display: none; 
+  }
+
+  /* Content */
+  .content {
+    margin-left: 0;
+    padding-top: 60px; /* Sesuaikan padding untuk navbar yang tetap di atas */
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  /* Filters */
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .filters select, .filters button {
     width: 100%;
-    margin: 10px;
+    margin-bottom: 10px;
   }
-  .chart-container {
-    width: 90%;
-    height: 90%;
+
+  /* Chart Containers */
+  .chart-container1, .chart-container2, .chart-container3, .chart-container4, .chart-container5, .chart-container6, .chart-container7 {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
   }
-  .chart-container2 {
-    width: 90%;
-    height: 90%;
-    left: 200px;
-    bottom: 180px;
+
+  .chart-container1 canvas, .chart-container2 canvas, .chart-container3 canvas, .chart-container4 canvas, .chart-container5 canvas, .chart-container6 canvas, .chart-container7 canvas {
+    max-width: 100%;
+    max-height: 100%;
   }
-}
+  }
 
 /* Mobile landscape: <= 768px */
 @media only screen and (min-width: 481px) and (max-width: 768px) {

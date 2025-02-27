@@ -11,10 +11,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@200;300;400&display=swap"
-      rel="stylesheet"
-    />
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"
+    >
   </head>
 
   <body>
@@ -23,41 +24,52 @@
       <div class="logo">
         <i class="fa fa-user-circle" aria-hidden="true"></i>
       </div>
+       <div class="nav-item" id="nav-home">
+          <a href="index.html">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span>Home</span>
+          </a>
+      </div>
       <div class="nav-item" id="nav-dashboard">
-        <i class="fa fa-home" aria-hidden="true"></i>
-        <span><a href="dashboard.html">Dashboard</a></span>
+        <a href="dashboard.html">
+          <i class="fa fa-gauge" aria-hidden="true"></i>
+          <span>Dashboard</span>
+        </a>
       </div>
       <div class="nav-item" id="nav-sales">
-        <i class="fa fa-line-chart" aria-hidden="true"></i>
-        <span><a href="sales.html">Sales</a></span>
+        <a href="sales.html">
+          <i class="fa fa-line-chart" aria-hidden="true"></i>
+          <span>Sales</span>
+        </a>
       </div>
       <div class="nav-item" id="Analytics">
-        <i class="fa fa-bar-chart" aria-hidden="true"></i>
-        <span><a href="analytics.html">Analytics</a></span>
+        <a href="analytics.html">
+          <i class="fa fa-bar-chart" aria-hidden="true"></i>
+          <span>Analytics</span>
+        </a>
       </div>
       <div class="nav-item" id="Setting">
-        <i class="fa fa-cog" aria-hidden="true"></i>
-        <span><a href="form.html">Feedback Box</a></span>
+        <a href="form.html">
+          <i class="fa fa-cog" aria-hidden="true"></i>
+          <span>Feedback Box</span>
+        </a>
       </div>
     </div>
     <!-- Dashboard -->
     <div class="content">
       <div class="header">
-        <h1>Coffee Shop Sales</h1>
-        <div class="bar-icon">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
+        <h1>Coffee Shop Sales</h1>    
       </div>
 
     <div class="container">
       <div class="filters">
-        <select id="storeFilter">
+        <select id="storeFilter" style="font-family: montserrat, sans-serif">
           <option value="All">All Stores</option>
           <option value="Lower Manhattan">Lower Manhattan</option>
           <option value="Hell's Kitchen">Hell's Kitchen</option>
           <option value="Astoria">Astoria</option>
         </select>
-        <select id="monthFilter">
+        <select id="monthFilter" style="font-family: montserrat, sans-serif">
           <option value="All">All Months</option>
           <option value="Januari">Januari</option>
           <option value="Februari">Februari</option>
@@ -66,10 +78,10 @@
           <option value="Mei">Mei</option>
           <option value="Juni">Juni</option>
         </select>
-        <button onclick="updateDashboard()">Update</button>
+        <button onclick="updateDashboard()" style="font-family: montserrat, sans-serif">Update</button>
       </div>
-
       <div class="chart-container">
+      <div class="chart-container1">
         <canvas id="topTransactionsChart"></canvas>
       </div>
 
@@ -101,6 +113,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/sales.js"></script>
-    <script src="./js/navbar.js"></script>
+    <!-- <script src="./js/navbar.js"></script> -->
   </body>
 </html>

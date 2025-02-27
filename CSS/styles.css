@@ -4,7 +4,7 @@
 body {
   overflow-x: hidden;
   width: 100%;
-  font-family: poppins;
+  font-family: montserrat, sans-serif;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -82,7 +82,6 @@ nav img {
 }
 a {
   color: white;
-  font-family: poppins;
   text-decoration: none;
 }
 .button:hover {

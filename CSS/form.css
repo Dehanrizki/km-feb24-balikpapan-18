@@ -1,7 +1,7 @@
 /* General styles */
 body {
   margin: 0;
-  font-family: "poppins";
+  font-family: montserrat, sans-serif;
   font-size: 13px;
 }
 .header {
@@ -106,7 +106,6 @@ body {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
 .form-container form button {
   background-color: #f3c796;
   color: white;
@@ -114,9 +113,11 @@ body {
   cursor: pointer;
   margin-top: 20px;
 }
-
 .form-container form button:hover {
   background-color: #e0b580;
+}
+input::placeholder {
+  font-family: montserrat, sans-serif;
 }
 @media only screen and (max-width: 834px) {
   .navbar {
