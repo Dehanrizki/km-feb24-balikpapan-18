@@ -137,7 +137,9 @@ body {
   border: none;
   cursor: pointer;
 }
-
+.modal-btn:hover {
+  background-color: #F3C796;
+}
 .modal {
   display: none;
   position: fixed;
@@ -324,13 +326,18 @@ body {
 
 /* Mobile portrait */
 @media only screen and (max-width: 480px) {
+  /* body {
+    overflow-x: hidden;
+  } */
   .navbar {
     width: 150px;
   }
   .content {
     width: 100%;
   }
-
+  .bar-icon {
+    margin-right: 25px;
+  }
   .cards {
     flex-wrap: wrap;
     padding-right: 35px;
@@ -343,7 +350,7 @@ body {
     margin-top: 10px;
   }
   .chart {
-    width: 100%;
+    width: 90%;
     margin-top: 20px;
     height: 12rem;
   }
